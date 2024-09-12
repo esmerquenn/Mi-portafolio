@@ -1,0 +1,33 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background: lightblue;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  height: 100vh;
+  color: red;
+}
+
+.orange {
+  background-color: #ffa500;
+}
+
+.purple {
+  background-color: #800080;
+
+}
+
+.green {
+  background-color: #008000;
+
+}
