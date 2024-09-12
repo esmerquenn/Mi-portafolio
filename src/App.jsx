@@ -48,12 +48,12 @@ function App() {
       <div className="relative" ref={comp}>
         <div
           id="intro-slider"
-          className="h-screen p-10 bg-gray-50 absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col gap-10 tracking-tight"
+          className="h-screen p-10 bg-gray-50  absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col items-start justify-center gap-10 tracking-tight"
         >
-          <h1 className="text-9xl" id="title-1">
+          <h1 className="text-5xl md:text-9xl" id="title-1">
             Front-End Developer
           </h1>
-          <h1 className="text-9xl" id="title-2">
+          <h1 className="text-5xl md:text-9xl" id="title-2">
             Freelancer
           </h1>
         </div>

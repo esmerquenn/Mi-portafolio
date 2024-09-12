@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
+      screens: {
+        sm: "540px",
+        md: "765px",
+        lg: "992px",
+        xl: "1140px",
+      },
     },
   },
   plugins: [],
