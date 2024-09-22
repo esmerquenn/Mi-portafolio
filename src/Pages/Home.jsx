@@ -1,12 +1,14 @@
 import React from "react";
 // import Cursor2 from "../components/Cursor2";
-import Project from "../components/Project";
+// import Project from "../components/Project";
+import Esmer from "../components/Esmer";
 
 function Home() {
   return (
     <div className=" text-2xl md:text-9xl font-bold text-gray-900  text-center font-neon">
       <div>
-        <Project/>
+        <Esmer />
+        {/* <Project/> */}
         {/* <Cursor2/> */}
       </div>
       {/* <div>

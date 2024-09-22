@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import "./../css/Cursor2.css";
 function Cursor2() {
   useEffect(() => {
     let allBlocks = document.querySelectorAll(".my-block");
@@ -28,7 +28,7 @@ function Cursor2() {
             {Array.from({ length: 100 }).map((_, index) => (
               <div
                 key={index}
-                className=" my-block w-[50px] h-[50px]  opacity-0 mix-blend-hard-light bg-[#000] transition-opacity duration-300 ease-in"
+                className=" my-block w-[50px] h-[50px]  opacity-0 mix-blend-hard-light bg-[#ffc30f] transition-opacity duration-300 ease-in"
               ></div>
             ))}
           </div>
