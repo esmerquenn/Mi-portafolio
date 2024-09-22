@@ -1,17 +1,25 @@
 import React from "react";
-// import Cursor2 from "../components/Cursor2";
-// import Project from "../components/Project";
-import Esmer from "../components/Esmer";
 
 function Home() {
   return (
     <div className=" text-2xl md:text-9xl font-bold text-gray-900  text-center font-neon">
       <div>
-        <Esmer />
-        {/* <Project/> */}
-        {/* <Cursor2/> */}
+        {/* <div className="header">
+          <div className="letters">
+            <div>a</div>
+            <div>r</div>
+            <div>t</div>
+            <div>w</div>
+          </div>
+          <div className="letters">
+            <div>o</div>
+            <div>r</div>
+            <div>k</div>
+            <div>s</div>
+          </div>
+        </div> */}
       </div>
-      {/* <div>
+      <div>
         <div className="h-24  bg-[#8FBC8B]"></div>
         <div className="h-24  bg-[#001514]"></div>
         <div className="h-24  bg-[#8F1D2C]"></div>
@@ -20,8 +28,8 @@ function Home() {
         <div className="h-24  bg-[#234829]"></div>
         <div className="h-24  bg-[#]"></div>
         <div className="h-24  bg-[#]"></div>
-      </div> 
-      <div className=" flex flex-wrap p-10">
+      </div>
+      {/* <div className=" flex flex-wrap p-10">
         <div className="h-24 w-24 bg-[#7B3F00]"></div>
         <div className="h-24 w-24 bg-[#8B5E3C]"></div>
         <div className="h-24 w-24 bg-[#A0522D]"></div>
