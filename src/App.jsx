@@ -45,7 +45,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="relative" ref={comp}>
+      <div className="relative " ref={comp}>
         <div
           id="intro-slider"
           className="h-screen p-10 bg-gray-50  absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col items-start justify-center gap-10 tracking-tight"

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "NeonGratisk";
+  src: url("./assets/fonts/neon_grotesk/NeueHaasDisplayMediu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  cursor: default;
+}
+/*
+.active{
+    opacity: 0.75;
+} */

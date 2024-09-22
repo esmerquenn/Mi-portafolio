@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor {
+    position: fixed;
+    background: #f1f1f1;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
+    top: 0;
+    left: 0;
+    transition: width .5s, height .5s;
+}
+
+.cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-image: url("./../assets/view1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.cursor.active {
+    opacity: 1;
+   scale: 12;
+   
+}
+
+.cursor.active::before {
+    opacity: 1;
+    width: 110px;
+   height: 110px;
+}
+
+.cursor-follower {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(4px, 4px);
+    top: -15px;
+    left: -20px;
+}
+
+.cursor-follower.active {
+    opacity: 0.7;
+    transform: scale(0);
+}
+
+.portfolio-thumb {
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.portfolio-thumb img {
+    max-width: 360px;
+    opacity: 0.4;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+    transform-origin: 90% center;
+}
+
+.portfolio-item:hover .portfolio-thumb {
+    transform: translateX(-1.75rem);
+}
+
+.portfolio-item:hover .portfolio-thumb img {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
