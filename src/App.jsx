@@ -44,7 +44,7 @@ function App() {
        <Cursor/>
 
         <Intro />
-        <Nav />
+        {/* <Nav /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -7,6 +7,7 @@ export default {
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
         neon: ["NeonGratisk"],
         warpen: ["Warpen"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       screens: {
         sm: "540px",
@@ -21,7 +22,8 @@ export default {
         lightGreen: "#8FBC8B",
         middleGreen: "#234829",
         olivegreen: "#7C7752",
-        brown:"#3F332B",
+        brown: "#3F332B",
+        darkBrown: "#2f1403",
         darkGreen: "#001514",
         darkRed: "#8F1D2C",
         redy: "#98323B",

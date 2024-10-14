@@ -102,24 +102,10 @@
 
 import React from "react";
 import "./../css/Home.css";
-import Card from "../components/Card";
+import Skills from "../components/Skills";
+
 function Home() {
-  return (
-    <div className=" w-[96%]  md:w-[90%] lg:w-[80%] mx-auto my-5">
-      <div className=" flex flex-wrap gap-10 justify-center items-center">
-        <Card bg="bg-redy" icon="./src/assets/react.png" name="React JS" header="Framework" />
-        <Card bg="bg-middleGreen" icon="./src/assets/js.png" name="JavaScript" header="Basics" />
-        <Card bg="bg-brown" icon="./src/assets/html.png" name="HTML" header="Basics" />
-        <Card bg="bg-olivegreen" icon="./src/assets/css.png" name="CSS" header="Basics" />
-        <Card bg="bg-redy" icon="./src/assets/ts.png" name="TypeScript" header="Basics" />
-        <Card bg="bg-lightGreen" icon="./src/assets/rtk.png" name="Redux Toolkit" header="Basics" />
-        <Card bg="bg-brown" icon="./src/assets/next.png" name="Next JS" header="Basics" />
-        <Card bg="bg-redy" icon="./src/assets/b.png" name="Bootstrap" header="FrameWork" />
-        <Card bg="bg-middleGreen" icon="./src/assets/tw.png" name="Tailwind CSS" header="FrameWork" />
-        <Card bg="bg-olivegreen" icon="./src/assets/gh.png" name="Github" header="Platform" />
-      </div>
-    </div>
-  );
+  return <Skills />;
 }
 
 export default Home;
