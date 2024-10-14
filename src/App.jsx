@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -10,12 +10,19 @@ import Lab from "./Pages/Lab";
 import Intro from "./Intro/Intro";
 import Nav from "./Intro/Nav";
 import Cursor from "./components/Cursor";
+
 function App() {
   const comp = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(true);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      const t1 = gsap.timeline();
+      const t1 = gsap.timeline({
+        onComplete: () => {
+          setIsAnimating(false);
+        },
+      });
+
       t1.from(["#title-1", "#title-2"], {
         opacity: 0,
         delay: 1.3,
@@ -40,9 +47,8 @@ function App() {
 
   return (
     <>
-      <div className="relative" ref={comp}>
-       <Cursor/>
-
+      <div className={`relative ${isAnimating ? " overflow-hidden h-screen " : ""}`} ref={comp}>
+        <Cursor />
         <Intro />
         <Nav />
         <Routes>
