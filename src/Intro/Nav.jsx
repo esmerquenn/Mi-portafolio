@@ -47,7 +47,7 @@ function Nav() {
   };
   return (
     <div className="menu-container uppercase " ref={container}>
-      <div className="menu-bar text-lightGreen fixed top-0 left-0 w-screen p-8 flex justify-between  z-20 items-center">
+      <div className="menu-bar text-middleGreen font-montserrat font-[600] bg-darkKrem w-screen p-8 flex justify-between  z-20 items-center">
         <div className="menu-logo">
           <Link to="/">Esmer</Link>
         </div>
@@ -55,47 +55,55 @@ function Nav() {
           <p>Menu</p>
         </div>
       </div>
-      <div className="menu-overlay  fixed  top-0 left-0 w-screen p-8 h-screen bg-lightGreen z-30 flex ">
-        <div className="menu-overlay-bar ">
-          <div className="menu-logo">
-            <Link to="/">Esmer</Link>
+      <div className="menu-overlay  fixed  top-0 left-0 w-screen p-8 h-screen bg-lightGreen z-30 flex flex-col ">
+        <div className="menu-overlay-bar flex justify-between items-center  font-montserrat font-[510] text-2xl">
+          <Link to="/">Esmer</Link>
+          <div onClick={toggleMenu} className="menu-close-icon flex  cursor-pointer items-end">
+            &#x2715;
           </div>
         </div>
-        <div style={{ flex: 2 }} className="menu-close-icon flex  cursor-pointer items-end">
-          <p onClick={toggleMenu}>&#x2715;</p>
-        </div>
-        <div style={{ flex: 4 }} className="menu-copy pt-32  flex flex-col justify-between md:pt-8">
-          <div className="menu-links">
-            {menuLinks.map((item, index) => (
-              <div key={index} className="menu-link-item">
-                <div className="menu-link-item-holder relative" onClick={handleClick}>
-                  <Link
-                    className="menu-link text-black  text-6xl md:text-7xl font-normal tracking-tighter leading-none"
-                    to={item.path}
-                  >
-                    {item.label}
-                  </Link>
+        <div>
+          <div className=" flex h-full items-center justify-center">
+            <div className="menu-link ">
+              {menuLinks.map((item, index) => (
+                <div key={index} className="menu-link-item">
+                  <div className="menu-link-item-holder relative" onClick={handleClick}>
+                    <Link
+                      className="menu-link text-black font-montserrat   text-6xl md:text-7xl font-normal tracking-tighter leading-none"
+                      to={item.path}
+                    >
+                      {item.label}
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="menu-info flex">
+          <div className="menu-info flex flex-col md:flex-row  md:items-center justify-around">
             <div className="menu-info-col flex flex-col justify-end">
-              <a href="#">X &#8599;</a>
-              <a href="#">Instagram &#8599;</a>
-              <a href="#">LinkedIn &#8599;</a>
-              <a href="#">Behance &#8599;</a>
-              <a href="#">Dribbble &#8599;</a>
+              <a className=" font-montserrat" target="_blank" href="#">
+                X &#8599;
+              </a>
+              <a className=" font-montserrat" target="_blank" href="https://www.instagram.com/esiquerela/">
+                Instagram &#8599;
+              </a>
+              <a className=" font-montserrat" target="_blank" href="https://www.linkedin.com/in/esmereshreti/">
+                LinkedIn &#8599;
+              </a>
+              <a className=" font-montserrat" target="_blank" href="https://github.com/esmerquenn">
+                Github &#8599;
+              </a>
             </div>
 
-            <div className="menu-info-col">
-              <p>esmereshraty@gmail.com</p>
-              <p>+994503344549</p>
+            <div className="menu-info-col flex flex-col justify-end">
+              <a target="_blank" href="mailto:esmereshraty@gmail.com" className=" font-montserrat lowercase">
+                esmereshraty@gmail.com
+              </a>
+              <a target="_blank" href="https://wa.me/+994503344549" className=" font-montserrat">
+                +994 50 334 45 49
+              </a>
             </div>
           </div>
-        </div>
-        <div style={{ flex: 4 }} className="menu-preview flex justify-end items-end">
-          <p>View Showreel</p>
         </div>
       </div>
     </div>
