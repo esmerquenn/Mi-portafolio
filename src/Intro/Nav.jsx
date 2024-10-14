@@ -19,7 +19,7 @@ function Nav() {
   const tl = useRef();
   useGSAP(
     () => {
-      // gsap.set(".menu-link-item-holder", { y: 75 });
+      gsap.set(".menu-link-item-holder", { y: 75 });
       tl.current = gsap
         .timeline({ paused: true })
         .to(".menu-overlay", {
@@ -27,13 +27,13 @@ function Nav() {
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           ease: "power4.inOut",
         })
-        // .to(".menu-link-item-holder", {
-        //   y: 0,
-        //   duration: 1,
-        //   stagger: 0.1,
-        //   ease: "power4.inOut",
-        //   delay: -0.75,
-        // });
+        .to(".menu-link-item-holder", {
+          y: 0,
+          duration: 1,
+          stagger: 0.1,
+          ease: "power4.inOut",
+          delay: -0.75,
+        });
     },
     { scope: container }
   );
@@ -55,17 +55,14 @@ function Nav() {
           <p>Menu</p>
         </div>
       </div>
-      <div className="menu-overlay  fixed  top-0 left-0 w-screen p-8 h-screen bg-lightGreen z-10 flex ">
+      <div className="menu-overlay  fixed  top-0 left-0 w-screen p-8 h-screen bg-lightGreen z-30 flex ">
         <div className="menu-overlay-bar ">
           <div className="menu-logo">
             <Link to="/">Esmer</Link>
           </div>
-          <div className="menu-close hidden md:block" onClick={toggleMenu}>
-            <p>Close</p>
-          </div>
         </div>
         <div style={{ flex: 2 }} className="menu-close-icon flex  cursor-pointer items-end">
-          <p>&#x2715;</p>
+          <p onClick={toggleMenu}>&#x2715;</p>
         </div>
         <div style={{ flex: 4 }} className="menu-copy pt-32  flex flex-col justify-between md:pt-8">
           <div className="menu-links">

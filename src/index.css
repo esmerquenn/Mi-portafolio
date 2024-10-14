@@ -8,6 +8,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Warpen";
+  src: url("./assets/fonts/Warpen.otf") format("truetype");
+}
 body {
   cursor: default;
 }

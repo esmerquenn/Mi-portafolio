@@ -1,0 +1,36 @@
+html {
+  overscroll-behavior: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.letters {
+  flex: 1;
+}
+.letters > div {
+  flex: 1;
+  font-size: 8.3vw;
+  text-align: center;
+  color: #8f1d2c;
+}
+.span_with_after {
+  position: relative;
+}
+.span_with_after::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  background: #eee5c8;
+  height: 2px;
+}
+.span_with_after::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 100%;
+  background: #eee5c8;
+  height: 2px;
+}

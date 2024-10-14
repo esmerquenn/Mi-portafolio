@@ -9,6 +9,7 @@ import Work from "./Pages/Work";
 import Lab from "./Pages/Lab";
 import Intro from "./Intro/Intro";
 import Nav from "./Intro/Nav";
+import Cursor from "./components/Cursor";
 function App() {
   const comp = useRef(null);
 
@@ -40,6 +41,8 @@ function App() {
   return (
     <>
       <div className="relative" ref={comp}>
+       <Cursor/>
+
         <Intro />
         <Nav />
         <Routes>

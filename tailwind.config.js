@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
         neon: ["NeonGratisk"],
+        warpen: ["Warpen"],
       },
       screens: {
         sm: "540px",
@@ -15,10 +16,15 @@ export default {
       },
       colors: {
         white: "#F7F7F7",
+        krem: "#EEE5C8",
+        darkKrem: "#CFBE9B",
         lightGreen: "#8FBC8B",
         middleGreen: "#234829",
+        olivegreen: "#7C7752",
+        brown:"#3F332B",
         darkGreen: "#001514",
         darkRed: "#8F1D2C",
+        redy: "#98323B",
         red: "#DB2B30",
       },
     },
