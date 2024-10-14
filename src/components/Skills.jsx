@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import SwitchButton from "./SwitchButton";
 import { useDispatch, useSelector } from "react-redux";
-import { resetSkill, skillsData } from "../api/slice/skillsSlice";
+import { resetSkill, skillsData } from "../api1/slice/skillsSlice";
 function Skills() {
   const data = useSelector(skillsData);
   const dispatch = useDispatch();

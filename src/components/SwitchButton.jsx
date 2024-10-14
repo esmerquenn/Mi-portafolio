@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { filterSkill } from "../api/slice/skillsSlice";
+import { filterSkill } from "../api1/slice/skillsSlice";
 
 const SwitchButton = () => {
   const [isToggled, setIsToggled] = useState("Basic");

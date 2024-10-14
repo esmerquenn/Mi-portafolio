@@ -36,5 +36,5 @@ const skillsSlice = createSlice({
   },
 });
 export const { filterSkill, resetSkill } = skillsSlice.actions;
-export const skillsData = (state) => state.skills;
+export const skillsData = (store) => store.skills;
 export default skillsSlice.reducer;
