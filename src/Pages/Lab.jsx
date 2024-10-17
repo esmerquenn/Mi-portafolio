@@ -1,10 +1,10 @@
 import React from 'react'
-import Cursor2 from '../components/Cursor2'
+import Skills from '../components/Skills'
 
 function Lab() {
   return (
     <div>
-     <Cursor2/>
+     <Skills />
     </div>
   )
 }
