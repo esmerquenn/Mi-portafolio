@@ -100,101 +100,46 @@
 
 // export default Home;
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./../css/Home.css";
 import gsap from "gsap";
 import CircularButton from "../components/CircularButton";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 function Home() {
-  const [elWidth, setElWidth] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [mouseX, setMouseX] = useState(0);
-  const [prevMouseX, setPrevMouseX] = useState(0);
-  const [skewTarget, setSkewTarget] = useState(0);
-  const [translateTarget, setTranslateTarget] = useState(0);
-  const [skewWithEasing, setSkewWithEasing] = useState(0);
-  const [translateWithEasing, setTranslateWithEasing] = useState(0);
-  const skewEasingFactor = 0.1;
-  const translateEasingFactor = 0.05;
-
-  // Lerp function for smooth transitions
-  const lerp = (start, end, factor) => {
-    return (1 - factor) * start + factor * end;
-  };
-
+  const pRef = useRef(null);
+  const imgRef = useRef(null);
   useEffect(() => {
-    const el = document.querySelector(".title");
-
-    const handleMouseMove = (event) => {
-      setMouseX(event.pageX);
+    const marqueeAnimation = () => {
+      gsap.fromTo(
+        pRef.current,
+        { x: "100vw" },
+        {
+          x: "-150vw",
+          duration: 15,
+          ease: "linear",
+          repeat: -1,
+        }
+      );
     };
 
-    const handleResize = () => {
-      if (el) {
-        setElWidth(el.offsetWidth);
-      }
-      setWindowWidth(window.innerWidth);
-    };
-
-    const animateMe = () => {
-      const newSkewTarget = mouseX - prevMouseX;
-      setSkewTarget(newSkewTarget);
-      setPrevMouseX(mouseX);
-
-      const newTranslateTarget = ((elWidth - windowWidth) / windowWidth) * mouseX * -1;
-      setTranslateTarget(newTranslateTarget);
-
-      let newSkewWithEasing = lerp(skewWithEasing, skewTarget, skewEasingFactor);
-      newSkewWithEasing = Math.min(Math.max(parseInt(newSkewWithEasing), -75), 75);
-      setSkewWithEasing(newSkewWithEasing);
-
-      const newTranslateWithEasing = lerp(translateWithEasing, translateTarget, translateEasingFactor);
-      setTranslateWithEasing(newTranslateWithEasing);
-
-      if (el) {
-        el.style.transform = `translateX(${newTranslateWithEasing}px) skewX(${newSkewWithEasing}deg)`;
-      }
-    };
-
-    const animate = () => {
-      animateMe();
-      requestAnimationFrame(animate);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("resize", handleResize);
-
-    const animationFrame = requestAnimationFrame(animate);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("resize", handleResize);
-      cancelAnimationFrame(animationFrame);
-    };
-  }, [mouseX, prevMouseX, skewTarget, skewWithEasing, translateWithEasing, translateTarget]);
-
-  // return (
-  //   <div
-  //     className="title"
-  //     style={{
-  //       transform: `skewX(${skewWithEasing}deg) translateX(${translateWithEasing}px)`,
-  //     }}
-  //   >
-  //     Title
-  //   </div>
-  // );
-
+    marqueeAnimation();
+  }, []);
   return (
-    <div>
+    <div className="relative home">
       <div className=" flex justify-center h-[80vh] items-center gap-4 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
         <div className="old-photo w-1/2">
           <img src="./assets/bg.jpg" alt="Old Photo" />
+          {/* <img ref={imgRef} src="./assets/bg.jpg" alt="Old Photo" className="w-full" /> */}
         </div>
       </div>
-      <section className="container overflow-hidden bg-[#171715] cursor-ew-resize whitespace-nowrap py-[10vh] ">
-        <p className="title font-montserrat text-[12vw] relative text-krem inline-block m-0 px-[15%] will-change-transform">
-          Lorem ipsum dolor sit.
-        </p>
-      </section>
+      <p
+        ref={pRef}
+        className=" uppercase absolute top-1/2  -translate-y-1/2  font-montserrat font-extrabold text-[7vw] bg-darkBrown text-lightGreen whitespace-nowrap"
+      >
+        What do i look like a girl with a plan ?
+      </p>
       <CircularButton />
     </div>
   );
