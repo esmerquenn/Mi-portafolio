@@ -134,12 +134,12 @@ function Home() {
           {/* <img ref={imgRef} src="./assets/bg.jpg" alt="Old Photo" className="w-full" /> */}
         </div>
       </div>
-      <p
+      {/* <p
         ref={pRef}
         className=" uppercase absolute top-1/2  -translate-y-1/2  font-montserrat font-extrabold text-[7vw] bg-darkBrown text-lightGreen whitespace-nowrap"
       >
         What do i look like a girl with a plan ?
-      </p>
+      </p> */}
       <CircularButton />
     </div>
   );

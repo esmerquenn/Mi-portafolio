@@ -47,7 +47,7 @@ function Nav() {
   };
   return (
     <div className="menu-container uppercase " ref={container}>
-      <div className="menu-bar text-middleGreen font-montserrat font-[600] bg-darkKrem w-screen p-8 flex justify-between  z-20 items-center">
+      <div className="menu-bar text-darkKrem font-montserrat font-[600] bg-darkBrown w-screen p-8 flex justify-between  z-20 items-center">
         <div className="menu-logo">
           <Link to="/">Esmer</Link>
         </div>
