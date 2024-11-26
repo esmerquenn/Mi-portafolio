@@ -100,47 +100,49 @@
 
 // export default Home;
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./../css/Home.css";
-import gsap from "gsap";
 import CircularButton from "../components/CircularButton";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
 
-gsap.registerPlugin(ScrollTrigger);
+import { FaGithubSquare } from "react-icons/fa";
+import Slider from "../components/Slider";
+
 function Home() {
-  const pRef = useRef(null);
-  const imgRef = useRef(null);
-  useEffect(() => {
-    const marqueeAnimation = () => {
-      gsap.fromTo(
-        pRef.current,
-        { x: "100vw" },
-        {
-          x: "-150vw",
-          duration: 15,
-          ease: "linear",
-          repeat: -1,
-        }
-      );
-    };
-
-    marqueeAnimation();
-  }, []);
   return (
-    <div className="relative home">
-      <div className=" flex justify-center h-[80vh] items-center gap-4 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
-        <div className="old-photo w-1/2">
-          <img src="./assets/bg.jpg" alt="Old Photo" />
-          {/* <img ref={imgRef} src="./assets/bg.jpg" alt="Old Photo" className="w-full" /> */}
+    <div>
+      <div className="relative home">
+        <div className=" flex justify-center h-[70vh] items-center gap-4 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
+          <div className="old-photo w-1/2">
+            <img src="./assets/bg.jpg" alt="Old Photo" />
+          </div>
         </div>
+        <div className=" text-krem  flex  justify-between ">
+          <div className="rotate-90 flex  gap-2 font-normal font-montserrat mb-4">
+            <span>EN</span> <span>AZ </span> <span>RU</span>
+          </div>
+          <div className="rotate-90 flex  gap-x-3 text-xl">
+            <a href="https://www.linkedin.com/in/esmereshreti/" target="_blank">
+              <FaLinkedin className="-rotate-90 mb-2" />
+            </a>
+            <a href="https://leetcode.com/u/esmer_666/" target="_blank">
+              <SiLeetcode className="-rotate-90" />
+            </a>
+            <a href="https://www.instagram.com/esiquerela/" target="_blank">
+              <FaInstagram className="-rotate-90" />{" "}
+            </a>
+            <a href="https://github.com/esmerquenn" target="_blank">
+              <FaGithubSquare className="-rotate-90" />
+            </a>
+          </div>
+        </div>
+        <CircularButton />
       </div>
-      {/* <p
-        ref={pRef}
-        className=" uppercase absolute top-1/2  -translate-y-1/2  font-montserrat font-extrabold text-[7vw] bg-darkBrown text-lightGreen whitespace-nowrap"
-      >
-        What do i look like a girl with a plan ?
-      </p> */}
-      <CircularButton />
+      <div className=" bg-redy h-[100vh]">
+<Slider/>
+      </div>
     </div>
   );
 }

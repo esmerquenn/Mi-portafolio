@@ -46,7 +46,7 @@ function Nav() {
     toggleMenu();
   };
   return (
-    <div className="menu-container uppercase " ref={container}>
+    <nav className="menu-container uppercase " ref={container}>
       <div className="menu-bar text-darkKrem font-montserrat font-[600] bg-darkBrown w-screen p-8 flex justify-between  z-20 items-center">
         <div className="menu-logo">
           <Link to="/">Esmer</Link>
@@ -106,7 +106,7 @@ function Nav() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
