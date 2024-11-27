@@ -58,9 +58,6 @@ const Slider = () => {
 
   return (
     <div className="container">
-      <div className="logo">
-        <a href="">Flow Canvas</a>
-      </div>
       <section className="hero pinned">
         <h1>
           Sclupted Zen <br />
