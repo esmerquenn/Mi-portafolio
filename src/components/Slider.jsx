@@ -1,26 +1,32 @@
-import React, { useEffect } from "react";
+
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import bg from "./22.jpg";
 import "./../css/Slider.css";
-import bg from './22.jpg'
 gsap.registerPlugin(ScrollTrigger);
 
 const Slider = () => {
-  useEffect(() => {
-    const footer = document.querySelector(".footer");
-    const lastCard = document.querySelector(".card.scroll");
-    const pinnedSections = Array.from(document.querySelectorAll(".pinned"));
+  const footerRef = useRef(null);
+  const lastCardRef = useRef(null);
+  const pinnedSectionsRef = useRef([]);
 
-    pinnedSections.forEach((section, index) => {
+  useEffect(() => {
+    const pinnedSections = pinnedSectionsRef.current;
+
+    pinnedSections.forEach((section, index, sections) => {
       const img = section.querySelector(".img");
-      const nextSection = pinnedSections[index + 1] || lastCard;
-      const endScalePoint = `top+=${nextSection.offsetTop - section.offsetTop} top`;
+      const nextSection = sections[index + 1] || lastCardRef.current;
+      const endScalePoint = `top+=${nextSection.offsetTop - section.offsetTop}px top`;
 
       gsap.to(section, {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: index === pinnedSections.length - 1 ? `+=${lastCard.offsetHeight / 2}` : footer.offsetTop - window.innerHeight,
+          end:
+            index === sections.length - 1
+              ? `+=${lastCardRef.current.offsetHeight / 2}px`
+              : footerRef.current.offsetTop - window.innerHeight,
           pin: true,
           pinSpacing: false,
           scrub: 1,
@@ -32,6 +38,7 @@ const Slider = () => {
         { scale: 1 },
         {
           scale: 0.5,
+          // opacity: 0,
           ease: "none",
           scrollTrigger: {
             trigger: section,
@@ -42,52 +49,25 @@ const Slider = () => {
         }
       );
     });
-
-    const heroH1 = document.querySelector(".hero h1");
-    ScrollTrigger.create({
-      trigger: document.body,
-      start: "top top",
-      end: "+=400vh",
-      scrub: 1,
-      onUpdate: (self) => {
-        const opacityProgress = self.progress;
-        heroH1.style.opacity = 1 - opacityProgress;
-      },
-    });
   }, []);
 
   return (
-    <div className="container">
-      <section className="hero pinned">
-        <h1>
-          Sclupted Zen <br />
-          play ground
-        </h1>
-      </section>
-      <section className="card pinned">
+    <div className="container-me">
+      {Array(3)
+        .fill()
+        .map((_, index) => (
+          <section key={index} className="card pinned" ref={(el) => pinnedSectionsRef.current.push(el)}>
+            <div className="img">
+              <img src={`../assets/bg1.jpg`} alt="bg" />
+            </div>
+          </section>
+        ))}
+      <section className="card card-scroll" ref={lastCardRef}>
         <div className="img">
           <img src={bg} alt="bg" />
         </div>
-        aaaaaaaaaa
       </section>
-      <section className="card pinned">
-        <div className="img">
-          <img src={bg}  alt="bg" />
-        </div>
-      </section>
-      <section className="card pinned">
-        <div className="img">
-          <img  src={bg}  alt="bg" />
-        </div>
-      </section>
-      <section className="card scroll">
-        <div className="img">
-          <img  src={bg}  alt="bg" />
-        </div>
-      </section>
-      <section className="footer">
-        <h1>Footer</h1>
-      </section>
+      <section className="footer-slider" ref={footerRef} />
     </div>
   );
 };

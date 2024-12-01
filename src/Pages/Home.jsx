@@ -140,8 +140,11 @@ function Home() {
         </div>
         <CircularButton />
       </div>
-      <div className=" bg-redy h-[100vh]">
+      <div className=" bg-blue-400">
 <Slider/>
+      </div>
+      <div className=" bg-lime-200 h-screen w-full">
+
       </div>
     </div>
   );
