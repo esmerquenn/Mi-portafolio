@@ -1,8 +1,15 @@
-
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import bg from "./22.jpg";
+import bg1 from "./../assets/works/azer-min.png";
+import bg2 from "./../assets/works/baharatci-min.png";
+import bg3 from "./../assets/works/myinsure-min.png";
+import bg4 from "./../assets/works/wahl-min.png";
+import bg5 from "./../assets/works/workr-min.png";
+import bg6 from "./../assets/works/cosmo-min.png";
+import bg8 from "./../assets/works/securty-min.png";
+import bg7 from "./../assets/works/srgroup-min.png";
+
 import "./../css/Slider.css";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +45,7 @@ const Slider = () => {
         { scale: 1 },
         {
           scale: 0.5,
-          // opacity: 0,
+          opacity: 0,
           ease: "none",
           scrollTrigger: {
             trigger: section,
@@ -50,21 +57,21 @@ const Slider = () => {
       );
     });
   }, []);
-
+let arr = [bg1, bg2, bg3,bg4,bg5,bg6,bg7,]
   return (
     <div className="container-me">
-      {Array(3)
-        .fill()
-        .map((_, index) => (
+      {arr
+        .map((item, index) => (
           <section key={index} className="card pinned" ref={(el) => pinnedSectionsRef.current.push(el)}>
             <div className="img">
-              <img src={`../assets/bg1.jpg`} alt="bg" />
+              <img src={item} alt="bg" />
+              <div className="shadow_img"></div>
             </div>
           </section>
         ))}
       <section className="card card-scroll" ref={lastCardRef}>
         <div className="img">
-          <img src={bg} alt="bg" />
+          <img src={bg8} alt="bg" />
         </div>
       </section>
       <section className="footer-slider" ref={footerRef} />

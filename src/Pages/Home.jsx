@@ -140,12 +140,10 @@ function Home() {
         </div>
         <CircularButton />
       </div>
-      <div className=" bg-blue-400">
-<Slider/>
+      <div>
+        <Slider />
       </div>
-      <div className=" bg-lime-200 h-screen w-full">
-
-      </div>
+      <div className=" bg-lime-200 h-screen w-full"></div>
     </div>
   );
 }

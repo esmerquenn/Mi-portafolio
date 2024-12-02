@@ -2,7 +2,7 @@ import React from "react";
 
 const CircularButton = () => {
   return (
-    <div className=" hidden md:block fixed bottom-0 right-16 cursor-pointer ">
+    <div className=" hidden md:block fixed bottom-0 right-16 cursor-pointer  z-10">
       <svg className="svg_mix" width="200" height="200" viewBox="0 0 270 270">
         <text fill="#EEE5C8" fontSize="25" textAnchor="middle" dominantBaseline="middle">
           <textPath className=" uppercase  font-montserrat " href="#circlePath" startOffset="50%">
