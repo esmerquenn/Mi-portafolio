@@ -160,7 +160,7 @@ function Home() {
       <div>
         <Slider />
       </div>
-      <div className="  h-screen w-full"></div>
+      {/* <div className="  h-screen w-full"></div> */}
     </div>
   );
 }

@@ -78,7 +78,7 @@ const Slider = () => {
     { link: "https://yusifsworkr.vercel.app/", img: bg5, resImg: bg_res_5 },
     { link: "https://cosmo-parkme.vercel.app/", img: bg6, resImg: bg_res_6 },
     { link: "https://sr-group-nu.vercel.app/", img: bg7, resImg: bg_res_7 },
-    { link: "https://barshop-clone.vercel.app/", img: bg9, resImg: bg_res_9 },
+    { link: "https://barshop-clone.vercel.app/", img: bg8, resImg: bg_res_8 },
   ];
   const windowWidth = useWindowWidth();
   return (
@@ -93,7 +93,7 @@ const Slider = () => {
       ))}
       <section className="card card-scroll" ref={lastCardRef}>
         <div className="img">
-          <img src={windowWidth < 768 ? bg_res_8 : bg8} alt="bg" />
+          <img src={windowWidth < 768 ? bg_res_9 : bg9} alt="bg" />
         </div>
       </section>
       <section className="footer-slider" ref={footerRef} />
