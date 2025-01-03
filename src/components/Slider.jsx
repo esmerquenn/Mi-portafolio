@@ -11,7 +11,19 @@ import bg8 from "./../assets/works/securty-min.png";
 import bg7 from "./../assets/works/srgroup-min.png";
 import bg9 from "./../assets/works/barshop.png";
 
+// ////////////////////////////////////////////
+import bg_res_1 from "./../assets/works_res/azer.png";
+import bg_res_2 from "./../assets/works_res/baharatci.png";
+import bg_res_3 from "./../assets/works_res/myinsure.png";
+import bg_res_4 from "./../assets/works_res/wahl.png";
+import bg_res_5 from "./../assets/works_res/workr.png";
+import bg_res_6 from "./../assets/works_res/cosmo.png";
+import bg_res_8 from "./../assets/works_res/securty.png";
+import bg_res_7 from "./../assets/works_res/srgroup.png";
+import bg_res_9 from "./../assets/works_res/barshop.png";
+
 import "./../css/Slider.css";
+import useWindowWidth from "../hooks/useWindowWidth";
 gsap.registerPlugin(ScrollTrigger);
 
 const Slider = () => {
@@ -26,7 +38,6 @@ const Slider = () => {
       const img = section.querySelector(".img");
       const nextSection = sections[index + 1] || lastCardRef.current;
       const endScalePoint = `top+=${nextSection.offsetTop - section.offsetTop}px top`;
-console.log(endScalePoint);
 
       gsap.to(section, {
         scrollTrigger: {
@@ -60,28 +71,29 @@ console.log(endScalePoint);
     });
   }, []);
   let arr = [
-    {link: "https://azer-tech-clone.vercel.app/", img: bg1 },
-    { link: "https://baharatci-clone.vercel.app/", img: bg2 },
-    { link: "https://1sigorta.az/", img: bg3 },
-    { link: "https://barbershop-gray.vercel.app/", img: bg4 },
-    { link: "https://yusifsworkr.vercel.app/", img: bg5 },
-    { link: "https://cosmo-parkme.vercel.app/", img: bg6 },
-    { link: "https://sr-group-nu.vercel.app/", img: bg7 },
-    { link: "https://barshop-clone.vercel.app/", img: bg9 },
+    { link: "https://azer-tech-clone.vercel.app/", img: bg1, resImg: bg_res_1 },
+    { link: "https://baharatci-clone.vercel.app/", img: bg2, resImg: bg_res_2 },
+    { link: "https://1sigorta.az/", img: bg3, resImg: bg_res_3 },
+    { link: "https://barbershop-gray.vercel.app/", img: bg4, resImg: bg_res_4 },
+    { link: "https://yusifsworkr.vercel.app/", img: bg5, resImg: bg_res_5 },
+    { link: "https://cosmo-parkme.vercel.app/", img: bg6, resImg: bg_res_6 },
+    { link: "https://sr-group-nu.vercel.app/", img: bg7, resImg: bg_res_7 },
+    { link: "https://barshop-clone.vercel.app/", img: bg9, resImg: bg_res_9 },
   ];
+  const windowWidth = useWindowWidth();
   return (
     <div className="container-me">
       {arr.map((item, index) => (
         <section key={index} className="card pinned " ref={(el) => pinnedSectionsRef.current.push(el)}>
           <a href={item.link} target="_blank" className="img border-4 rounded-lg border-gray-50 ">
-            <img src={item.img} alt="bg" />
+            <img src={windowWidth < 768 ? item.resImg : item.img} alt="bg" />
             <div className="shadow_img"></div>
           </a>
         </section>
       ))}
       <section className="card card-scroll" ref={lastCardRef}>
         <div className="img">
-          <img src={bg8} alt="bg" />
+          <img src={windowWidth < 768 ? bg_res_8 : bg8} alt="bg" />
         </div>
       </section>
       <section className="footer-slider" ref={footerRef} />
