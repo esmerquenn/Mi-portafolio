@@ -73,8 +73,8 @@ html {
 
 .old-photo img {
   width: 100%; 
-  rotate: -7deg;
-  filter: sepia(.4) contrast(1) brightness(0.9);
+  /* rotate: -7deg; */
+  filter: sepia(.5) contrast(1) brightness(0.9);
  
   border-radius: 10px; 
  

@@ -18,11 +18,11 @@ const Project = () => {
       const { clientX, clientY } = event;
       mouseX = clientX;
       mouseY = clientY;
-      gsap.to("#cursor", {
-        x: clientX,
-        y: clientY,
-        ease: "power4.out",
-      });
+      // gsap.to("#cursor", {
+      //   x: clientX,
+      //   y: clientY,
+      //   ease: "power4.out",
+      // });
 
       gsap.to(follower, {
         x: posX.current + (mouseX - posX.current),
@@ -42,17 +42,18 @@ const Project = () => {
   const handleMouseEnter = () => {
     document.querySelector(".cursor").classList.add("active");
     document.querySelector(".cursor-follower").classList.add("active");
+    // document.querySelector(".cursor").textContent("alooo")
   };
 
   const handleMouseLeave = () => {
-    document.querySelector(".cursor").classList.remove("active");
-    document.querySelector(".cursor-follower").classList.remove("active");
+    // document.querySelector(".cursor").classList.remove("active");
+    // document.querySelector(".cursor-follower").classList.remove("active");
     console.log("salam");
   };
 
   return (
     <div id="wrapper">
-      <div id="cursor" className="cursor"></div>
+      {/* <div id="cursor" className="cursor"></div> */}
       <div ref={followerRef} className="cursor-follower"></div>
       <div className="portfolio-item">
         <div className="portfolio-thumb">

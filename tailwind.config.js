@@ -25,7 +25,7 @@ export default {
         brown: "#3F332B",
         darkBrown: "#2f1403",
         darkGreen: "#001514",
-        darkRed: "#8F1D2C",
+        darkRed: "#fefefe",
         redy: "#98323B",
         red: "#DB2B30",
       },

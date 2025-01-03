@@ -9,6 +9,7 @@ import bg5 from "./../assets/works/workr-min.png";
 import bg6 from "./../assets/works/cosmo-min.png";
 import bg8 from "./../assets/works/securty-min.png";
 import bg7 from "./../assets/works/srgroup-min.png";
+import bg9 from "./../assets/works/barshop.png";
 
 import "./../css/Slider.css";
 gsap.registerPlugin(ScrollTrigger);
@@ -57,18 +58,26 @@ const Slider = () => {
       );
     });
   }, []);
-let arr = [bg1, bg2, bg3,bg4,bg5,bg6,bg7,]
+  let arr = [
+    {link: "https://azer-tech-clone.vercel.app/", img: bg1 },
+    { link: "https://baharatci-clone.vercel.app/", img: bg2 },
+    { link: "https://1sigorta.az/", img: bg3 },
+    { link: "https://barbershop-gray.vercel.app/", img: bg4 },
+    { link: "https://yusifsworkr.vercel.app/", img: bg5 },
+    { link: "https://cosmo-parkme.vercel.app/", img: bg6 },
+    { link: "https://sr-group-nu.vercel.app/", img: bg7 },
+    { link: "https://barshop-clone.vercel.app/", img: bg9 },
+  ];
   return (
     <div className="container-me">
-      {arr
-        .map((item, index) => (
-          <section key={index} className="card pinned" ref={(el) => pinnedSectionsRef.current.push(el)}>
-            <div className="img">
-              <img src={item} alt="bg" />
-              <div className="shadow_img"></div>
-            </div>
-          </section>
-        ))}
+      {arr.map((item, index) => (
+        <section key={index} className="card pinned " ref={(el) => pinnedSectionsRef.current.push(el)}>
+          <a href={item.link} target="_blank" className="img border-4 rounded-lg border-gray-50 ">
+            <img src={item.img} alt="bg" />
+            <div className="shadow_img"></div>
+          </a>
+        </section>
+      ))}
       <section className="card card-scroll" ref={lastCardRef}>
         <div className="img">
           <img src={bg8} alt="bg" />
