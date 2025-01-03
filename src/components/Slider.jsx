@@ -26,6 +26,7 @@ const Slider = () => {
       const img = section.querySelector(".img");
       const nextSection = sections[index + 1] || lastCardRef.current;
       const endScalePoint = `top+=${nextSection.offsetTop - section.offsetTop}px top`;
+console.log(endScalePoint);
 
       gsap.to(section, {
         scrollTrigger: {

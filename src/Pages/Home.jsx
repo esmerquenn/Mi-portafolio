@@ -115,12 +115,12 @@ function Home() {
   return (
     <div>
       <div className="relative home  mb-10">
-        <div className="  flex justify-start h-[70vh] items-center gap-10 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
-          <div className="old-photo w-1/4">
+        <div className="  flex flex-col md:flex-row justify-start h-[70vh] items-center gap-10 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
+          <div className="old-photo w-1/2 md:w-1/4">
             <img src="./assets/men.jpg" alt="Old Photo" />
           </div>
-          <div className=" flex flex-col gap-6">
-            <div className="uppercase font-medium text-5xl text-white">
+          <div className=" flex flex-col justify-center items-center gap-2 md:gap-6">
+            <div className="uppercase font-medium text-xl md:text-5xl text-white">
               <Typewriter
                 options={{
                   strings: ["I'm a Front-End Developer"],
@@ -130,17 +130,13 @@ function Home() {
                 }}
               />
             </div>
-            <h2 className=" font-medium text-4xl text-white capitalize">
+            <h2 className=" font-medium text-base md:text-4xl text-white capitalize">
               programming 
-              7 <span className="bg-lightGreen h-14 w-1 inline-block rotate-12 translate-y-3"></span> 24 
+              7 <span className="bg-lightGreen h-6 md:h-14 w-[2px] md:w-1 inline-block rotate-12 translate-y-1 md:translate-y-3"></span> 24 
             </h2> 
-            {/* <h1 className=" font-medium text-7xl text-white">Freelance Developer </h1>
-            <h2 className=" font-medium text-6xl text-white">
-              7 <span className="bg-lightGreen h-20 w-1 inline-block rotate-12 translate-y-4"></span> 24{" "}
-            </h2> */}
           </div>
         </div>
-        <div className=" text-krem  flex  justify-between ">
+        <div className="hidden  text-krem  md:flex  justify-between ">
           <div className="rotate-90 flex  gap-2 font-normal font-montserrat mb-4">
             <span>EN</span> <span>AZ </span> <span>RU</span>
           </div>

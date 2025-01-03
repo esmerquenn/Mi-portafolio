@@ -45,7 +45,7 @@ img {
   height: 10vh;
 }
 section {
-  height: 50vh;
+  height: 25vh;
 }
 
 @media only screen and (min-width: 998px) {
