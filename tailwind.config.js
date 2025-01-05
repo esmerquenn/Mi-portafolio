@@ -4,10 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        spaceGrotesk: ["Space Grotesk", "sans-serif"],
-        neon: ["NeonGratisk"],
-        warpen: ["Warpen"],
-        montserrat: ["Montserrat", "sans-serif"],
+        roboto: "Roboto, sans-serif",
+        opensans: "'Open Sans', serif",
+        montserrat: "Montserrat,sans-serif",
       },
       screens: {
         sm: "540px",
@@ -18,7 +17,7 @@ export default {
       colors: {
         white: "#F7F7F7",
         krem: "#EEE5C8",
-        darkKrem: "#CFBE9B",
+        darkKrem: "#f7f7f7",
         lightGreen: "#8FBC8B",
         middleGreen: "#234829",
         olivegreen: "#7C7752",

@@ -119,7 +119,7 @@ function Home() {
           <div className="old-photo w-1/2 md:w-1/4">
             <img src="./assets/men.jpg" alt="Old Photo" />
           </div>
-          <div className=" flex flex-col justify-center items-center gap-2 md:gap-6">
+          <div className=" flex flex-col justify-center md:justify-start items-center md:items-start gap-2 md:gap-6">
             <div className="uppercase font-medium text-xl md:text-5xl text-white">
               <Typewriter
                 options={{
@@ -130,15 +130,17 @@ function Home() {
                 }}
               />
             </div>
-            <h2 className=" font-medium text-base md:text-4xl text-white capitalize">
-              programming 
-              7 <span className="bg-lightGreen h-6 md:h-14 w-[2px] md:w-1 inline-block rotate-12 translate-y-1 md:translate-y-3"></span> 24 
-            </h2> 
+            <h2 className=" font-normal text-base md:text-4xl text-white capitalize">Passionate About Frontend Development</h2>
+            <h2 className=" font-normal text-base md:text-4xl text-white capitalize">
+              Available 24 
+              <span className="bg-lightGreen mx-2 h-6 md:h-14 w-[2px] md:w-1 inline-block rotate-12 translate-y-1 md:translate-y-3"></span>
+              7
+            </h2>
           </div>
         </div>
-        <div className="hidden  text-krem  md:flex  justify-between ">
+        <div className="hidden  text-white  md:flex  justify-between ">
           <div className="rotate-90 flex  gap-2 font-normal font-montserrat mb-4">
-            <span>EN</span> <span>AZ </span> <span>RU</span>
+            <span>EN</span> <span className="mx-2">AZ </span> <span>RU</span>
           </div>
           <div className="rotate-90 flex  gap-x-3 text-xl">
             <a href="https://www.linkedin.com/in/esmereshreti/" target="_blank">
@@ -148,7 +150,7 @@ function Home() {
               <SiLeetcode className="-rotate-90" />
             </a>
             <a href="https://www.instagram.com/esiquerela/" target="_blank">
-              <FaInstagram className="-rotate-90" />{" "}
+              <FaInstagram className="-rotate-90" />
             </a>
             <a href="https://github.com/esmerquenn" target="_blank">
               <FaGithubSquare className="-rotate-90" />

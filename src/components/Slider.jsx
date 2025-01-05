@@ -82,21 +82,23 @@ const Slider = () => {
   ];
   const windowWidth = useWindowWidth();
   return (
-    <div className="container-me">
-      {arr.map((item, index) => (
-        <section key={index} className="card pinned " ref={(el) => pinnedSectionsRef.current.push(el)}>
-          <a href={item.link} target="_blank" className="img border-4 rounded-lg border-gray-50 ">
-            <img src={windowWidth < 768 ? item.resImg : item.img} alt="bg" />
-            <div className="shadow_img"></div>
+    <div className="container-me ">
+      <div className="md:px-40">
+        {arr.map((item, index) => (
+          <section key={index} className="card pinned " ref={(el) => pinnedSectionsRef.current.push(el)}>
+            <a href={item.link} target="_blank" className="img border-4 rounded-lg border-gray-50 ">
+              <img src={windowWidth < 768 ? item.resImg : item.img} alt="bg" />
+              <div className="shadow_img"></div>
+            </a>
+          </section>
+        ))}
+        <section className="card card-scroll" ref={lastCardRef}>
+          <a href="https://barshop-clone.vercel.app" target="_blank" className="img">
+            <img src={windowWidth < 768 ? bg_res_9 : bg9} alt="bg" />
           </a>
         </section>
-      ))}
-      <section className="card card-scroll" ref={lastCardRef}>
-        <div className="img">
-          <img src={windowWidth < 768 ? bg_res_9 : bg9} alt="bg" />
-        </div>
-      </section>
-      <section className="footer-slider" ref={footerRef} />
+        <section className="footer-slider" ref={footerRef} />
+      </div>
     </div>
   );
 };
