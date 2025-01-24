@@ -47,16 +47,16 @@ function Nav() {
   };
   return (
     <nav className="menu-container uppercase " ref={container}>
-      <div className="menu-bar text-darkKrem font-montserrat font-[600] bg-darkBrown w-screen p-8 flex justify-between  z-20 items-center">
-        <div className="menu-logo">
+      <div className="menu-bar fixed z-20 text-darkKrem font-[600] bg-transparent w-screen p-3 md:p-8 flex justify-between   items-center">
+        <div className="menu-logo capitalize esmer text-6xl md:text-8xl ">
           <Link to="/">Esmer</Link>
         </div>
-        <div className="menu-open" onClick={toggleMenu}>
+        <div className="menu-open text-base" onClick={toggleMenu}>
           <p>Menu</p>
         </div>
       </div>
       <div className="menu-overlay  fixed  top-0 left-0 w-screen p-8 h-screen bg-lightGreen z-30 flex flex-col ">
-        <div className="menu-overlay-bar flex justify-between items-center  font-montserrat font-[510] text-2xl">
+        <div className="menu-overlay-bar flex justify-between items-center  esmer font-[510] text-3xl">
           <Link to="/">Esmer</Link>
           <div onClick={toggleMenu} className="menu-close-icon flex  cursor-pointer items-end">
             &#x2715;

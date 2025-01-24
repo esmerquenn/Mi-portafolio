@@ -7,6 +7,9 @@ html {
 .letters {
   flex: 1;
 }
+.home {
+  background: url(./../assets/aaaa.png) center/cover;
+}
 
 .letters > div {
   flex: 1;
@@ -59,7 +62,11 @@ html {
   top: 5px;
   left: 5px;
 }
-
+@media (max-width: 768px) {
+  .home {
+    background: url(./../assets/aaaa.png) 55%/cover;
+  }
+}
 @media (min-width: 768px) {
   .button-daire {
     padding: 0.25em 0.75em;
@@ -72,21 +79,18 @@ html {
 }
 
 .old-photo img {
-  width: 100%; 
+  width: 100%;
   /* rotate: -7deg; */
-  filter: sepia(.5) contrast(1) brightness(0.9);
- 
-  border-radius: 10px; 
- 
+  filter: sepia(0.5) contrast(1) brightness(0.9);
+
+  border-radius: 10px;
+
   /* mix-blend-mode:luminosity */
 }
 
-
-
-
-.svg_mix textPath{
+.svg_mix textPath {
   mix-blend-mode: difference !important;
 }
-.svg_mix text:nth-last-child(){
+.svg_mix text:nth-last-child() {
   mix-blend-mode: difference !important;
 }

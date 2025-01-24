@@ -31,10 +31,17 @@ html {
   background-color: #008000;
 
 } */
+ @font-face {
+  font-family: 'esmer';
+  src: url(./assets/fonts/Phitagate-Regular.otf);
+ }
 body{
   background: #2f1403 !important;
   font-family: "Open sans", sans-serif;
 
+}
+.esmer{
+  font-family: 'esmer';
 }
 
 .container_my{

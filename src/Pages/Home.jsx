@@ -108,18 +108,17 @@ import { SiLeetcode } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 
 import { FaGithubSquare } from "react-icons/fa";
-import Slider from "../components/Slider";
 import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
     <div>
-      <div className="relative home  mb-10">
-        <div className="  flex flex-col md:flex-row justify-start h-[70vh] items-center gap-10 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
-          <div className="old-photo w-1/2 md:w-1/4">
-            <img src="./assets/men.jpg" alt="Old Photo" />
-          </div>
-          <div className=" flex flex-col justify-center md:justify-start items-center md:items-start gap-2 md:gap-6">
+      <div  className="relative home  mb-10">
+        <div className="  flex flex-col md:flex-row justify-start h-[100vh] items-center gap-10 w-[96%]  md:w-[90%] lg:w-[80%] mx-auto">
+          {/* <div className="old-photo w-1/2 md:w-1/4">
+            <img src="./men-removebg-preview.png" alt="Old Photo" />
+          </div> */}
+          <div className=" flex flex-col  h-screen justify-center  items-center md:items-start gap-2 md:gap-6">
             <div className="uppercase font-medium text-xl md:text-5xl text-white">
               <Typewriter
                 options={{
@@ -159,8 +158,9 @@ function Home() {
         </div>
         <CircularButton />
       </div>
-      <div>
-        <Slider />
+      <div className=" my-24">
+        {/* <HorizontalScroll/> */}
+        {/* <Slider /> */}
       </div>
       {/* <div className="  h-screen w-full"></div> */}
     </div>
