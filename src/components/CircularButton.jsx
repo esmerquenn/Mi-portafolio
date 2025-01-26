@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const CircularButton = () => {
   return (
-    <Link to="/projects" className=" hidden md:block fixed bottom-0 right-16 cursor-pointer  z-10">
-      <svg className="svg_mix" width="200" height="200" viewBox="0 0 270 270">
+    <Link to="/projects" className="  fixed bottom-0 right-16 cursor-pointer  z-10">
+      <Button/>
+      {/* <svg className="svg_mix" width="200" height="200" viewBox="0 0 270 270">
         <text fill="#EEE5C8" fontSize="25" textAnchor="middle" dominantBaseline="middle">
           <textPath className=" uppercase  font-montserrat " href="#circlePath" startOffset="50%">
             Go to Projects ♦︎❁♦︎ be happy 4u ♦︎❁♦︎
@@ -30,7 +32,7 @@ const CircularButton = () => {
           a 84,84 0 1,1 -168,0"
           />
         </defs>
-      </svg>
+      </svg> */}
     </Link>
   );
 };

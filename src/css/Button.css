@@ -1,0 +1,52 @@
+.rotate_svg{
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .rotate_svg>path:nth-child(1) {
+    animation: rotate-path-1 7s infinite linear;
+    transform-origin: center;
+  }
+
+  .rotate_svg>path:nth-child(2) {
+    animation: rotate-path-2 21s infinite linear;
+    transform-origin: center;
+  }
+  @keyframes rotate-path-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotate-path-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .my_rotate_span{
+    position: relative;
+   
+  }
+  .my_rotate_span_arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  @media (max-width:768px) {
+    .rotate_svg{
+        width: 70px;
+        height: 70px;
+        
+      }
+    
+  }
