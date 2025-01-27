@@ -15,7 +15,8 @@ const months = [
   "December",
 ];
 
-import esmer from "./../assets/mee.jpg"
+import esmer from "./../assets/mee.jpg";
+import bah from "./../assets/bah.png";
 function Home() {
   return (
     <div className=" text-white">
@@ -51,27 +52,104 @@ function Home() {
         </div>
         <div className=" h-[40vh]"></div>
       </div>
-      <div className=" bg-black flex flex-col md:flex-row px-10 justify-evenly">
-        <div className=" w-1/3">
-          <h3 className="font-fancy uppercase text-5xl mb-10">Hello I'M Esmer</h3>
-          <p className=" font-poppins text-lg md:text-2xl  pb-2">
-            I use my passion and skills to create digital products and experiences. National and international customers rely on
-            me for design, implementation, and management of their digital products. As an independent, I work also with web
-            agencies, companies, startups and individuals to create a blueprint for the digital business. Advisor and partner of
-            some digital and fintech startups. Also, Judge at CSSDA and The Webby.
-          </p>
+      <div className="bg-black">
+        <div className="  flex flex-col md:flex-row px-10 justify-evenly py-5">
+          <div className=" md:w-1/3">
+            <h3 className="font-fancy uppercase text-3xl md:text-5xl mb-10">Hello I'M Esmer</h3>
+            <p className=" font-poppins text-lg md:text-2xl  pb-2">
+              I use my passion and skills to create digital products and experiences. National and international customers rely on
+              me for design, implementation, and management of their digital products. As an independent, I work also with web
+              agencies, companies, startups and individuals to create a blueprint for the digital business. Advisor and partner of
+              some digital and fintech startups. Also, Judge at CSSDA and The Webby.
+            </p>
+          </div>
+          <div className=" md:w-1/4">
+            <img className="w-full opacity-50" src={esmer} alt="esmer" />
+          </div>
         </div>
-        <div className=" w-1/4">
-          <img className="w-full opacity-50" src={esmer} alt="esmer" />
+        <div className=" py-20 px-10">
+          <h3 className="font-fancy uppercase text-3xl md:text-5xl mb-10">Featured work</h3>
+          <div className="grid grid-cols-3">
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+            <div className=" flex items-center gap-2">
+              <span className=" uppercase  text-right">
+                <h3 className="font-fancy text-2xl font-bold">Baharatci.az</h3>
+                <h6 className=" font-poppins text-sm">html/css/js</h6>
+              </span>
+              <img className="w-[300px] opacity-50 border-4 border-redy " src={bah} alt="baharatci" />
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="py-20 bg-black  flex justify-center items-center ">
-        <button className=" transition-button bg-white text-black px-4 py-2  rounded-2xl ">
-          <Link className=" uppercase font-fancy" to="/work">
-            see my works
-          </Link>
-        </button>
+        <div className="py-20 flex justify-center items-center ">
+          <button className=" transition-button bg-white text-black px-4 py-2  rounded-2xl ">
+            <Link className=" uppercase font-fancy" to="/work">
+              see my works
+            </Link>
+          </button>
+        </div>
       </div>
     </div>
   );
