@@ -2,11 +2,11 @@
   font-family: "GrandSlang";
   src: url(./assets/fonts/GrandSlang-Roman/GrandSlang-Roman.ttf);
 }
-.font-fancy{
-  font-family: "GrandSlang";
 
+.font-fancy {
+  font-family: "GrandSlang";
 }
-.bg-custom{
-  background:  url(./assets/bg/herobg-2k2x.webp)top/cover;
+.bg-custom {
+  background: url(./assets/bg/herobg-2k2x.webp) top/cover;
   height: 100vh;
 }

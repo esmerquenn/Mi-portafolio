@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: "Roboto, sans-serif",
-     
+        poppins: "Poppins,serif",
       },
       screens: {
         sm: "540px",
