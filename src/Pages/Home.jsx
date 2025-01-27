@@ -15,6 +15,7 @@ const months = [
   "December",
 ];
 
+import esmer from "./../assets/mee.jpg"
 function Home() {
   return (
     <div className=" text-white">
@@ -49,6 +50,20 @@ function Home() {
           </div>
         </div>
         <div className=" h-[40vh]"></div>
+      </div>
+      <div className=" bg-black flex flex-col md:flex-row px-10 justify-evenly">
+        <div className=" w-1/3">
+          <h3 className="font-fancy uppercase text-5xl mb-10">Hello I'M Esmer</h3>
+          <p className=" font-poppins text-lg md:text-2xl  pb-2">
+            I use my passion and skills to create digital products and experiences. National and international customers rely on
+            me for design, implementation, and management of their digital products. As an independent, I work also with web
+            agencies, companies, startups and individuals to create a blueprint for the digital business. Advisor and partner of
+            some digital and fintech startups. Also, Judge at CSSDA and The Webby.
+          </p>
+        </div>
+        <div className=" w-1/4">
+          <img className="w-full opacity-50" src={esmer} alt="esmer" />
+        </div>
       </div>
 
       <div className="py-20 bg-black  flex justify-center items-center ">
