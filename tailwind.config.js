@@ -5,8 +5,7 @@ export default {
     extend: {
       fontFamily: {
         roboto: "Roboto, sans-serif",
-        opensans: "'Open Sans', serif",
-        montserrat: "Montserrat,sans-serif",
+     
       },
       screens: {
         sm: "540px",
