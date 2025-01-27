@@ -6,8 +6,10 @@ function MainLayout() {
     <div>
       <nav className="  fixed  top-1 left-3 right-3 py-4 border-b border-slate-50">
         <div className=" flex justify-between text-white">
-          <div>
-            <Link>esmer</Link>
+          <div className="font-fancy text-3xl">
+            <Link to="/">
+              <strong className=" uppercase mr-3 ">esmer</strong>
+            </Link>
             <strong>Front end developer</strong>
           </div>
           <ul>
