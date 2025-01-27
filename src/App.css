@@ -7,6 +7,18 @@
   font-family: "GrandSlang";
 }
 .bg-custom {
-  background: url(./assets/bg/herobg-2k2x.webp) top/cover;
-  height: 100vh;
+  background: linear-gradient(#00000000, #00000000, #00000000, #000), url(./assets/bg/herobg-2k2x.webp) top/cover;
+  background-repeat: repeat-y;
+  min-height: 100vh;
+}
+
+.transition-button {
+  font-weight: 600;
+  word-spacing: 2px;
+  width: 200px;
+  transition: 0.5s;
+}
+.transition-button:hover {
+  width: 250px;
+  border-radius: 5px;
 }
