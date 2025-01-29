@@ -13,7 +13,7 @@ export default {
         xl: "1140px",
       },
       colors: {
-        white: "#F7F7F7",
+        white: "#F5EEE6",
         krem: "#EEE5C8",
         darkKrem: "#f7f7f7",
         lightGreen: "#8FBC8B",

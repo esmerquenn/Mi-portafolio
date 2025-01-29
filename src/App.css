@@ -2,14 +2,27 @@
   font-family: "GrandSlang";
   src: url(./assets/fonts/GrandSlang-Roman/GrandSlang-Roman.ttf);
 }
+@font-face {
+  font-family: "Tusker Grotesk";
+  src: url(./assets/fonts/TuskerGrotesk-2500Medium.ttf);
+}
 
 .font-fancy {
-  font-family: "GrandSlang";
+  font-family: "GrandSlang", serif;
+}
+.font-tusker {
+  font-family:  "Tusker Grotesk", serif;
 }
 .bg-custom {
   background: linear-gradient(#00000000, #00000000, #00000000, #000), url(./assets/bg/herobg-2k2x.webp) top/cover;
   background-repeat: repeat-y;
   min-height: 100vh;
+}
+.bg-custom2 {
+  background: linear-gradient(#000, #00000000, #00000000, #00000000), url(./assets/bg/herobg-2k2x.webp) center/cover;
+  background-attachment: fixed;
+  /* background-repeat: repeat-y; */
+  /* min-height: 100vh; */
 }
 
 .transition-button {
