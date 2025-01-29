@@ -25,16 +25,18 @@ function Nav() {
     };
   }, []);
   return (
-    <nav className="  fixed  top-0 left-0 right-0  px-10 ">
-      <div className=" flex justify-between py-4 text-white border-b border-slate-50">
-        <div className="font-fancy text-3xl">
+    <nav className="  fixed z-30 top-0 left-0 right-0  px-10 ">
+      <div className=" flex justify-between items-center py-1 text-white border-b border-white">
+        <div className="font-fancy text-3xl py-2">
           <Link to="/">
             <strong className=" uppercase mr-3 ">esmer</strong>
           </Link>
           <strong>Front end developer</strong>
         </div>
-        <ul>
-          <li>aaa</li>
+        <ul className=" pt-3">
+          <li>
+            <Link to="/work" className=" uppercase font-poppins font-medium text-lg">Work</Link>
+          </li>
         </ul>
       </div>
     </nav>
