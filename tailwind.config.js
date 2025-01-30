@@ -20,6 +20,7 @@ export default {
         middleGreen: "#234829",
         olivegreen: "#7C7752",
         brown: "#3F332B",
+        mybrown: "#2E2827",
         darkBrown: "#2f0d03",
         darkGreen: "#001514",
         darkRed: "#fefefe",

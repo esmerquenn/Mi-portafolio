@@ -22,60 +22,7 @@ function Skills() {
           </h2>
           <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
         </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            typescript
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            React
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase  text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            next js
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            gsap js
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-           css
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-           html
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            barba js
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            barba js
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
-        <div>
-          <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7 hover:italic ">
-            barba js
-          </h2>
-          <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-        </div>
+       
       </div>
     </div>
   );
