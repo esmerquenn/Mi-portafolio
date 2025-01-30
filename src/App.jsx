@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import './App.css'
 import MainLayout from "./Layout/MainLayout";
 import Work from "./Pages/Work";
+import Skills from "./Pages/Skills";
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
 
           <Route index element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/services" element={<Skills />} />
           </Route>
         </Routes>
       </div>

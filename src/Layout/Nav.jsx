@@ -33,9 +33,12 @@ function Nav() {
           </Link>
           <strong>Front end developer</strong>
         </div>
-        <ul className=" pt-3">
+        <ul className=" pt-3 flex gap-6">
           <li>
             <Link to="/work" className=" uppercase font-poppins font-medium text-lg">Work</Link>
+          </li>
+          <li>
+            <Link to="/services" className=" uppercase font-poppins font-medium text-lg">Services</Link>
           </li>
         </ul>
       </div>
