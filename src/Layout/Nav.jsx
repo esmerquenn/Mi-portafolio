@@ -31,7 +31,7 @@ function Nav() {
           <Link to="/">
             <strong className=" uppercase mr-3 ">esmer</strong>
           </Link>
-          <strong>Front end developer</strong>
+          {/* <strong>Front end developer</strong> */}
         </div>
         <ul className=" pt-3 flex gap-6">
           <li>
