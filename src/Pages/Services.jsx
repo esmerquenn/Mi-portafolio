@@ -57,7 +57,7 @@ const skills = [
 const Services = () => {
 
   return (
-    <div className="bg-mybrown ">
+    <div className="bg-custom-services ">
      
       <div className=" min-h-screen p-3 md:p-10 pt-28">
         <FrontServices services={services} servicesName="FRONT-END DEVELOPMENT" />

@@ -4,7 +4,7 @@ const projects = [
   { name: "Cosmopark", url: "https://cosmo-parkme.vercel.app/" },
   { name: "Workr", url: "https://yusifsworkr.vercel.app/" },
   { name: "Mi'esta", url: "https://method.kon.az/" },
-  { name: "Action", url: null }, // Link yoxdursa, klik edilə bilməz
+  { name: "Action", url: null },
   { name: "1sigorta.az", url: "https://1sigorta.az/" },
   { name: "Azer Tech", url: "https://azer-tech-clone.vercel.app/" },
   { name: "SS System", url: "https://www.smartsistem.az/" },
@@ -40,85 +40,6 @@ function Work() {
             </div>
           ))}
         </div>
-        {/* <div className=" flex flex-col items-end gap-10 px-[10%] ">
-          <div>
-            <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] transition-translate duration-500 mb-7 hover:italic hover:translate-x-1">
-              <a target="_blank" href="https://barshop-clone.vercel.app/">
-                Barshop
-              </a>
-            </h2>
-
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://baharatci-clone.vercel.app/">
-                Baharatci
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://cosmo-parkme.vercel.app/">
-                cosmopark
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://yusifsworkr.vercel.app/">
-                workr
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://method.kon.az/">
-                mi'esta
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">action</h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://1sigorta.az/">
-                1sigorta.az
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] flex whitespace-nowrap font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://azer-tech-clone.vercel.app/">
-                azer tech
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://www.smartsistem.az/">
-                SS SYSTEM
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-          <div>
-            <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
-              <a target="_blank" href="https://berbershop.az/">
-                berber.shop
-              </a>
-            </h2>
-            <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
-          </div>
-        </div> */}
       </div>
     </div>
   );
