@@ -14,7 +14,7 @@ const projects = [
 function Work() {
   return (
     <div>
-      <div className=" bg-custom-work min-h-screen    pt-28 px-3 lg:px-10 flex flex-col items-start justify-between">
+      <div className=" bg-custom-work min-h-screen    pt-28 px-3 lg:px-10 flex flex-col xl:flex-row items-start justify-between">
         <div className=" font-poppins text-white xl:sticky min-h-[50vh] flex justify-end flex-col  md:p-10 top-40 z-10">
           <h5 className=" uppercase text-3xl">WORK</h5>
           <p className=" my-3 text-xl">
@@ -24,10 +24,10 @@ function Work() {
             to realize that goal.
           </p>
         </div>
-        <div className="flex flex-col items-start lg:items-end gap-10 xl:px-[10%]">
+        <div className="flex flex-col items-start xl:items-end gap-10 2xl:px-[10%]">
           {projects.map((project, index) => (
             <div key={index}>
-              <h2 className="uppercase text-white text-4xl md:text-7xl xl:text-[100px] tracking-wide font-bold font-fancy leading-[60px] md:mb-7 hover:italic hover:translate-x-1 transition-transform duration-500">
+              <h2 className="uppercase text-white text-4xl md:text-7xl 2xl:text-[100px] tracking-wide font-bold font-fancy leading-[60px] md:mb-7 hover:italic hover:translate-x-1 transition-transform duration-500">
                 {project.url ? (
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                     {project.name}
