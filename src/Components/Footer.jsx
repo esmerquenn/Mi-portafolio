@@ -1,8 +1,14 @@
 import React from "react";
+import CvButton from "./CvButton";
 
 function Footer() {
   return (
     <div className="bg-custom2  text-white   pt-20 px-10">
+      <div className="relative h-[80vh]">
+        <div className=" w-[500px] sm:w-[600px] absolute flex justify-end items-center pr-10 sm:pr-28 -left-[300px] h-[50vh] sm:h-[80vh] border rounded-full border-white">
+          <CvButton />
+        </div>
+      </div>
       <div className=" mt-10 sm:mt-28 flex lg:items-end  flex-col lg:flex-row gap-3 lg:gap-14">
         <h1 className=" lg:w-2/5 font-tusker  uppercase text-[6rem] sm:text-[120px] lg:text-[198px]  tracking-wide ">
           LET'S CONNECT

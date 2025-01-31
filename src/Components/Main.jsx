@@ -27,7 +27,6 @@ function Main() {
             <p>I adapt quickly, learn fast, and always bring fresh ideas to projects.</p>
             <button className=" bg-custom-btn capitalize text-lg font-medium w-[200px] border py-1.5 px-4 border-white rounded-full flex items-center justify-center gap-2">
               <a target="_blank" href="mailto:esmereshraty@gmail.com">
-                {" "}
                 Let’s collaborate!
               </a>
             </button>
