@@ -6,7 +6,9 @@
   font-family: "Tusker Grotesk";
   src: url(./assets/fonts/TuskerGrotesk-2500Medium.ttf);
 }
-
+::selection{
+  background: #98323B;
+}
 .font-fancy {
   font-family: "GrandSlang", serif;
 }
