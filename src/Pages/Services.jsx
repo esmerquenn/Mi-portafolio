@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { TbBrandTypescript, TbBrandAlpineJs } from "react-icons/tb";
 import { FaConnectdevelop, FaReact, FaHtml5 } from "react-icons/fa";
@@ -53,12 +51,9 @@ const skills = [
   { name: "ANT Design", icon: <SiAntdesign className="text-2xl" /> },
 ];
 
-
 const Services = () => {
-
   return (
     <div className="bg-custom-services ">
-     
       <div className=" min-h-screen p-3 md:p-10 pt-28">
         <FrontServices services={services} servicesName="FRONT-END DEVELOPMENT" />
         <FrontSkills skills={skills} skillsName="Skills" />
