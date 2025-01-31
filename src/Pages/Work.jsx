@@ -1,8 +1,21 @@
+const projects = [
+  { name: "Barshop", url: "https://barshop-clone.vercel.app/" },
+  { name: "Baharatci", url: "https://baharatci-clone.vercel.app/" },
+  { name: "Cosmopark", url: "https://cosmo-parkme.vercel.app/" },
+  { name: "Workr", url: "https://yusifsworkr.vercel.app/" },
+  { name: "Mi'esta", url: "https://method.kon.az/" },
+  { name: "Action", url: null }, // Link yoxdursa, klik edilə bilməz
+  { name: "1sigorta.az", url: "https://1sigorta.az/" },
+  { name: "Azer Tech", url: "https://azer-tech-clone.vercel.app/" },
+  { name: "SS System", url: "https://www.smartsistem.az/" },
+  { name: "Berber.Shop", url: "https://berbershop.az/" },
+];
+
 function Work() {
   return (
     <div>
-      <div className=" bg-custom-work min-h-screen    pt-28 px-10 flex items-start justify-between">
-        <div className=" font-poppins text-white sticky min-h-[50vh] flex justify-end flex-col  p-10 top-40 z-10">
+      <div className=" bg-custom-work min-h-screen    pt-28 px-3 lg:px-10 flex flex-col items-start justify-between">
+        <div className=" font-poppins text-white xl:sticky min-h-[50vh] flex justify-end flex-col  md:p-10 top-40 z-10">
           <h5 className=" uppercase text-3xl">WORK</h5>
           <p className=" my-3 text-xl">
             I use a variety of technologies when I make websites. Even though my early work might seem amateurish, I pick things
@@ -11,11 +24,26 @@ function Work() {
             to realize that goal.
           </p>
         </div>
-        <div className=" flex flex-col items-end gap-10 px-[10%] ">
+        <div className="flex flex-col items-start lg:items-end gap-10 xl:px-[10%]">
+          {projects.map((project, index) => (
+            <div key={index}>
+              <h2 className="uppercase text-white text-4xl md:text-7xl xl:text-[100px] tracking-wide font-bold font-fancy leading-[60px] md:mb-7 hover:italic hover:translate-x-1 transition-transform duration-500">
+                {project.url ? (
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                    {project.name}
+                  </a>
+                ) : (
+                  project.name
+                )}
+              </h2>
+              <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end Developer</span>
+            </div>
+          ))}
+        </div>
+        {/* <div className=" flex flex-col items-end gap-10 px-[10%] ">
           <div>
             <h2 className="uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] transition-translate duration-500 mb-7 hover:italic hover:translate-x-1">
               <a target="_blank" href="https://barshop-clone.vercel.app/">
-                {" "}
                 Barshop
               </a>
             </h2>
@@ -25,7 +53,6 @@ function Work() {
           <div>
             <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
               <a target="_blank" href="https://baharatci-clone.vercel.app/">
-                {" "}
                 Baharatci
               </a>
             </h2>
@@ -34,7 +61,6 @@ function Work() {
           <div>
             <h2 className=" uppercase text-white text-[100px] tracking-wide font-bold font-fancy leading-[60px] mb-7">
               <a target="_blank" href="https://cosmo-parkme.vercel.app/">
-                {" "}
                 cosmopark
               </a>
             </h2>
@@ -92,7 +118,7 @@ function Work() {
             </h2>
             <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end developer </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
