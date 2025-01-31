@@ -16,12 +16,13 @@ import {
   SiRedis,
   SiGraphql,
 } from "react-icons/si";
-import { MdOutlineAnimation, MdOutlineDashboard } from "react-icons/md";
-import { RiJavascriptLine, RiNextjsLine, RiSecurePaymentLine, RiServerFill } from "react-icons/ri";
+import { MdOutlineAnimation, MdOutlineDashboard, MdOutlineTipsAndUpdates } from "react-icons/md";
+import { RiJavascriptLine, RiNextjsLine, RiSecurePaymentLine, RiServerFill, RiTeamLine } from "react-icons/ri";
 import { GrCss3 } from "react-icons/gr";
 import { GoVersions } from "react-icons/go";
 import { IoPulseOutline } from "react-icons/io5";
 import { BiBroadcast } from "react-icons/bi";
+import { BsPeopleFill } from "react-icons/bs";
 
 export const back_services = [
   { name: "Backend Development", icon: <FaNode className="text-4xl" /> },
@@ -75,3 +76,18 @@ export const front_skills = [
   { name: "Material UI", icon: <SiMui className="text-2xl" /> },
   { name: "ANT Design", icon: <SiAntdesign className="text-2xl" /> },
 ];
+
+
+export const mentorship_services = [
+    { name: "Front-End Mentorship", icon: <RiTeamLine className="text-4xl" /> },
+    { name: "Code Reviews & Best Practices", icon: <MdOutlineTipsAndUpdates className="text-4xl" /> },
+    { name: "Pair Programming Sessions", icon: <BsPeopleFill className="text-4xl" /> },
+    { name: "Career & Portfolio Guidance", icon: <AiOutlineRocket className="text-4xl" /> },
+  ];
+  
+  export const soft_skills = [
+    { name: "Problem Solving", icon: <MdOutlineTipsAndUpdates className="text-2xl" /> },
+    { name: "Team Collaboration", icon: <RiTeamLine className="text-2xl" /> },
+    { name: "Effective Communication", icon: <BsPeopleFill className="text-2xl" /> },
+    { name: "Time Management", icon: <AiOutlineRocket className="text-2xl" /> },
+  ];
