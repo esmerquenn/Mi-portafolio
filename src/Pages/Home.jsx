@@ -36,11 +36,15 @@ function Home() {
               </div>
             </div>
             <p className=" font-poppins text-lg md:text-2xl  text-right pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iusto tenetur eaque dolores adipisci, at culpa
-              voluptatibus obcaecati ducimus neque itaque animi nostrum magnam ullam natus ut beatae accusantium minus iste atque
+              Hi there, I'm Esmer, and I'm a front-end developer. My areas of expertise are animation and deepcoding dashboards,
+              systems, and websites. I've worked in this field for more than 1.5 years. Coding what you want to see on your
+              websites is what I do.
               <span className=" hidden md:block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci sequi officiis dolorum quaerat vel
-                animi ad fuga ab veniam.
+                I also mentor others to learn about this field and pursue careers similar to mine.
+              </span>
+              <span>
+              My passion is helping people
+              create their own business websites or websites showcasing their ideas and thoughts. I love what I do.
               </span>
             </p>
           </div>
