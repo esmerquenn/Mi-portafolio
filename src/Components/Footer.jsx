@@ -42,13 +42,25 @@ function Footer() {
               <a className=" uppercase font-poppins text-white font-medium" target="_blank" href="https://github.com/esmerquenn/">
                 Github
               </a>
-              <a className=" uppercase font-poppins text-white font-medium" target="_blank" href="">
+              <a
+                className=" uppercase font-poppins text-white font-medium"
+                target="_blank"
+                href="https://www.linkedin.com/in/esmereshreti/"
+              >
                 linkedin
               </a>
-              <a className=" uppercase font-poppins text-white font-medium" target="_blank" href="">
+              <a
+                className=" uppercase font-poppins text-white font-medium"
+                target="_blank"
+                href="https://www.instagram.com/esiquerela/"
+              >
                 instagram
               </a>
-              <a className=" uppercase font-poppins text-white font-medium" target="_blank" href="">
+              <a
+                className=" uppercase font-poppins text-white font-medium"
+                target="_blank"
+                href="https://leetcode.com/u/esmer_666/"
+              >
                 leetcode
               </a>
             </div>
