@@ -9,14 +9,39 @@ function Main() {
   return (
     <div className="bg-black">
       <div className="  flex flex-col lg:flex-row px-10 items-center justify-evenly py-5">
-        <div className=" lg:w-1/3">
+        <div className=" lg:w-3/5">
           <h3 className="font-fancy uppercase text-3xl md:text-5xl mb-10">Hello I'M Esmer</h3>
-          <p className=" font-poppins text-lg md:text-2xl  pb-2">
-            I use my passion and skills to create digital products and experiences. National and international customers rely on
-            me for design, implementation, and management of their digital products. As an independent, I work also with web
-            agencies, companies, startups and individuals to create a blueprint for the digital business. Advisor and partner of
-            some digital and fintech startups. Also, Judge at CSSDA and The Webby.
-          </p>
+          <div className=" font-poppins text-lg md:text-2xl  flex flex-col gap-5 pb-2">
+            {/* <p>
+              I have worked as a front-end developer for two startups and have experience with 13 actual website projects and
+              three dashboards. From one-page websites to complete e-commerce platforms, I have created them all, always modifying
+              the functionality and design to satisfy the needs of my clients.
+            </p>
+            <p>
+              I take a methodical, patient, and problem-solving approach to development. Any design can be converted into clear,
+              useful, and responsive code by me.
+            </p>
+            <p>
+              I have a strong visual perspective and an eye for aesthetics because of my photography background, which aids me in
+              situations quickly, and always approach projects with a fresh viewpoint. designing interfaces that are both
+              aesthetically pleasing and easy to use.
+            </p>
+            <p> I'm quick to adjust, quick to pick things up, and always approach projects with a fresh idea. </p>
+            <p> Get in touch if you want to work together on a project!</p> */}
+            <p>
+              I have worked as a front-end developer for two startups, completing 13 websites and three dashboards. From one-page
+              sites to full e-commerce platforms, I tailor functionality and design to meet client needs.
+            </p>
+            <p>
+              I take a patient, problem-solving approach to development, transforming designs into clean, responsive, and
+              functional code.
+            </p>
+            <p>
+              With a background in photography, I have a keen eye for aesthetics, ensuring visually appealing and user-friendly
+              interfaces.
+            </p>
+            <p>I adapt quickly, learn fast, and always bring fresh ideas to projects. Let’s collaborate!</p>
+          </div>
         </div>
         <div className=" md:w-1/2 lg:w-1/4">
           <img className="w-full opacity-50 border-4 border-white" src={esmer} alt="esmer" />
