@@ -5,8 +5,10 @@ function Work() {
         <div className=" font-poppins text-white sticky min-h-[50vh] flex justify-end flex-col  p-10 top-40 z-10">
           <h5 className=" uppercase text-3xl">WORK</h5>
           <p className=" my-3 text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quibusdam incidunt dolorum sint similique cumque
-            architecto autem unde ut totam a in dolore labore doloribus sequi nihil saepe aut nulla qui rerum consectetur,
+            I use a variety of technologies when I make websites. Even though my early work might seem amateurish, I pick things
+            up quickly and create all of my own work on my own. My objective is to advance to the position of senior developer
+            with a focus on creating intuitive user interfaces. I work to develop and hone my abilities with each project in order
+            to realize that goal.
           </p>
         </div>
         <div className=" flex flex-col items-end gap-10 px-[10%] ">
