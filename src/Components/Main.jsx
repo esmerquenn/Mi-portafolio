@@ -12,22 +12,6 @@ function Main() {
         <div className=" lg:w-3/5">
           <h3 className="font-fancy uppercase text-3xl md:text-5xl mb-10">Hello I'M Esmer</h3>
           <div className=" font-poppins text-lg md:text-2xl  flex flex-col gap-5 pb-2">
-            {/* <p>
-              I have worked as a front-end developer for two startups and have experience with 13 actual website projects and
-              three dashboards. From one-page websites to complete e-commerce platforms, I have created them all, always modifying
-              the functionality and design to satisfy the needs of my clients.
-            </p>
-            <p>
-              I take a methodical, patient, and problem-solving approach to development. Any design can be converted into clear,
-              useful, and responsive code by me.
-            </p>
-            <p>
-              I have a strong visual perspective and an eye for aesthetics because of my photography background, which aids me in
-              situations quickly, and always approach projects with a fresh viewpoint. designing interfaces that are both
-              aesthetically pleasing and easy to use.
-            </p>
-            <p> I'm quick to adjust, quick to pick things up, and always approach projects with a fresh idea. </p>
-            <p> Get in touch if you want to work together on a project!</p> */}
             <p>
               I have worked as a front-end developer for two startups, completing 13 websites and three dashboards. From one-page
               sites to full e-commerce platforms, I tailor functionality and design to meet client needs.
@@ -40,12 +24,13 @@ function Main() {
               With a background in photography, I have a keen eye for aesthetics, ensuring visually appealing and user-friendly
               interfaces.
             </p>
-            <p>
-              I adapt quickly, learn fast, and always bring fresh ideas to projects.
-            </p>
-              <button className=" bg-custom-btn capitalize text-lg font-medium w-[200px] border py-1.5 px-4 border-white rounded-full flex items-center justify-center gap-2">
-               <a target="_blank" href="mailto:esmereshraty@gmail.com"> Let’s collaborate!</a>
-              </button>
+            <p>I adapt quickly, learn fast, and always bring fresh ideas to projects.</p>
+            <button className=" bg-custom-btn capitalize text-lg font-medium w-[200px] border py-1.5 px-4 border-white rounded-full flex items-center justify-center gap-2">
+              <a target="_blank" href="mailto:esmereshraty@gmail.com">
+                {" "}
+                Let’s collaborate!
+              </a>
+            </button>
           </div>
         </div>
         <div className=" md:w-1/2 lg:w-1/4">
