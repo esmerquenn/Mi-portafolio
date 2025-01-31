@@ -90,4 +90,10 @@ export const mentorship_services = [
     { name: "Team Collaboration", icon: <RiTeamLine className="text-2xl" /> },
     { name: "Effective Communication", icon: <BsPeopleFill className="text-2xl" /> },
     { name: "Time Management", icon: <AiOutlineRocket className="text-2xl" /> },
+    { name: "Quick Learning", icon: <AiOutlineRocket className="text-2xl" /> },
+    { name: "Critical Thinking", icon: <AiOutlineRocket className="text-2xl" /> },
+    { name: "Work Ethic", icon: <AiOutlineRocket className="text-2xl" /> },
+    { name: "Time Management", icon: <AiOutlineRocket className="text-2xl" /> },
   ];
+
+ 
