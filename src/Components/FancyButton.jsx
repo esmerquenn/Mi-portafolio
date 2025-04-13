@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-const FancyButton = ({ text, color, bg }) => {
+const FancyButton = ({ text, style , icon}) => {
   const wrapperRef = useRef(null);
   const boxesRef = useRef(null);
   const defaultTextRef = useRef(null);
@@ -45,19 +45,20 @@ const FancyButton = ({ text, color, bg }) => {
   }, []);
 
   return (
-    <button
+    <div
       ref={wrapperRef}
-      className={`wrapper overflow-hidden  uppercase md:text-3xl lg:text-4xl border p-2 md:px-4 border-[] rounded-full relative ${bg} ${color}`}
+      className={` wrapper overflow-hidden text-center relative ${style}`}
+    //   className={`wrapper overflow-hidden  uppercase md:text-3xl lg:text-4xl border p-2 md:px-4 border-[] rounded-full relative ${bg} ${color}`}
     >
-      <div ref={defaultTextRef} className="default-text">
-        {text}
+      <div ref={defaultTextRef} className="default-text flex gap-1 items-center">
+       {icon} {text}
       </div>
       <div ref={boxesRef} className="boxes flex gap-2.5 absolute inset-0 items-center" style={{ opacity: 0 }}>
-        <div className="shrink-0">{text}</div>
-        <div className="shrink-0">{text}</div>
-        <div className="shrink-0">{text}</div>
+        <div className="shrink-0 flex gap-1 items-center">{icon} {text}</div>
+        <div className="shrink-0 flex gap-1 items-center">{icon} {text}</div>
+        <div className="shrink-0 flex gap-1 items-center">{icon} {text}</div>
       </div>
-    </button>
+    </div>
   );
 };
 

@@ -5,12 +5,7 @@ import { interests } from "../helpers/intrestes";
 import FancyButton from "./FancyButton";
 
 function Footer() {
-  const socialLinks = [
-    { name: "Github", href: "https://github.com/esmerquenn/" },
-    { name: "linkedin", href: "https://www.linkedin.com/in/esmereshreti/" },
-    { name: "instagram", href: "https://www.instagram.com/esiquerela/" },
-    { name: "leetcode", href: "https://leetcode.com/u/esmer_666/" },
-  ];
+
   return (
     <div className="bg-custom2  text-white   pt-20 px-10">
       <div className="relative h-[80vh]">
@@ -27,59 +22,16 @@ function Footer() {
             <h3 className=" font-fancy uppercase font-bold  text-[4vw] md:text-2xl my-4">I'M always interested about</h3>
             <div className=" flex flex-wrap gap-4 font-medium  font-poppins text-lg sm:text-xl">
               {interests.map((item) => (
-                <FancyButton key={item} text={item} color='text-[#F5EEE6]' bg="bg-transparent"/>
+                <FancyButton key={item} icon="" text={item} style="uppercase md:text-3xl lg:text-4xl border p-2 md:px-4 border-[#F5EEE6] rounded-full "/>
               ))}
             </div>
           </div>
           <div>
             <div className=" flex justify-between items-center py-5 border-b border-white ">
               <h6 className=" text-sm md:text-2xl uppercase font-poppins font-medium text-white ">Are you minding a project?</h6>
-              <button className=" text-brown bg-white px-3 py-1 text-xl sm:text-2xl md:text-3xl  w-[120px] sm:w-[150px] md:w-[200px]  uppercase font-poppins rounded-full font-medium">
-                <a target="_blank" href="mailto:esmereshraty@gmail.com">
-                  CONTACT
-                </a>
-              </button>
+              <FancyButton icon="" text="CONTACT" style="text-brown bg-white px-3 py-1 text-xl sm:text-2xl md:text-3xl  w-[120px] sm:w-[150px] md:w-[200px]  uppercase font-poppins rounded-full font-medium"/>
             </div>
-            <SocialMediaLinks links={socialLinks} />
-            {/* <div className="flex text-sm md:text-xl gap-2 pt-4 pb-6">
-              {socialLinks.map((link, idx) => (
-                <a
-                  key={idx}
-                  className="uppercase font-poppins text-white font-medium"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={link.href}
-                >
-                  {link.name}
-                </a>
-              ))}
-            </div> */}
-            {/* <div className=" flex text-sm md:text-xl gap-2 pt-4 pb-6">
-              <a className=" uppercase font-poppins text-white font-medium" target="_blank" href="https://github.com/esmerquenn/">
-                Github
-              </a>
-              <a
-                className=" uppercase font-poppins text-white font-medium"
-                target="_blank"
-                href="https://www.linkedin.com/in/esmereshreti/"
-              >
-                linkedin
-              </a>
-              <a
-                className=" uppercase font-poppins text-white font-medium"
-                target="_blank"
-                href="https://www.instagram.com/esiquerela/"
-              >
-                instagram
-              </a>
-              <a
-                className=" uppercase font-poppins text-white font-medium"
-                target="_blank"
-                href="https://leetcode.com/u/esmer_666/"
-              >
-                leetcode
-              </a>
-            </div> */}
+            <SocialMediaLinks/>
           </div>
         </div>
       </div>
