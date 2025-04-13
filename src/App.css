@@ -16,7 +16,7 @@
   font-family: "Tusker Grotesk", serif;
 }
 .bg-custom {
-  background: linear-gradient(#00000000, #00000000, #00000000, #000), url(./assets/bg/herobg-2k2x.webp) top/cover;
+  background: linear-gradient(#00000000, #00000000, #00000000, #131313), url(./assets/bg/herobg-2k2x.webp) top/cover;
   background-repeat: repeat-y;
 }
 .bg-custom-btn {
@@ -31,7 +31,7 @@
 }
 
 .bg-custom2 {
-  background: linear-gradient(#000, #00000000, #00000000, #00000000), url(./assets/bg/herobg-2k2x.webp) center/cover;
+  background: linear-gradient(#131313, #00000000, #00000000, #00000000), url(./assets/bg/herobg-2k2x.webp) center/cover;
   background-attachment: fixed;
 }
 .bg-custom-work {
@@ -79,9 +79,5 @@
   .my-grid > a:nth-child(4) {
     grid-column: 1/4;
   }
-  .bg-custom-services {
-    /* background: linear-gradient(#00000047, #00000047, #00000047), url(./assets/bg/oll.webp) center/cover; */
-    /* background-repeat: repeat-y; */
-   
-  }
+
 }

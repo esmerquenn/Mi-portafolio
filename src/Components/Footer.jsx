@@ -1,7 +1,16 @@
 import React from "react";
 import CvButton from "./CvButton";
+import SocialMediaLinks from "../Features/SocialMediaLinks";
+import { interests } from "../helpers/intrestes";
+import FancyButton from "./FancyButton";
 
 function Footer() {
+  const socialLinks = [
+    { name: "Github", href: "https://github.com/esmerquenn/" },
+    { name: "linkedin", href: "https://www.linkedin.com/in/esmereshreti/" },
+    { name: "instagram", href: "https://www.instagram.com/esiquerela/" },
+    { name: "leetcode", href: "https://leetcode.com/u/esmer_666/" },
+  ];
   return (
     <div className="bg-custom2  text-white   pt-20 px-10">
       <div className="relative h-[80vh]">
@@ -17,22 +26,9 @@ function Footer() {
           <div>
             <h3 className=" font-fancy uppercase font-bold  text-[4vw] md:text-2xl my-4">I'M always interested about</h3>
             <div className=" flex flex-wrap gap-4 font-medium  font-poppins text-lg sm:text-xl">
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">
-                Frontend development
-              </button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">photography</button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">
-                Web development
-              </button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">
-                new bussiness
-              </button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">
-                Software development
-              </button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">Mentoring</button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">chocolates</button>
-              <button className="uppercase md:text-3xl lg:text-4xl border p-2  border-[#F5EEE6] rounded-full">startups</button>
+              {interests.map((item) => (
+                <FancyButton key={item} text={item} color='text-[#F5EEE6]' bg="bg-transparent"/>
+              ))}
             </div>
           </div>
           <div>
@@ -44,7 +40,21 @@ function Footer() {
                 </a>
               </button>
             </div>
-            <div className=" flex text-sm md:text-xl gap-2 pt-4 pb-6">
+            <SocialMediaLinks links={socialLinks} />
+            {/* <div className="flex text-sm md:text-xl gap-2 pt-4 pb-6">
+              {socialLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  className="uppercase font-poppins text-white font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link.href}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div> */}
+            {/* <div className=" flex text-sm md:text-xl gap-2 pt-4 pb-6">
               <a className=" uppercase font-poppins text-white font-medium" target="_blank" href="https://github.com/esmerquenn/">
                 Github
               </a>
@@ -69,7 +79,7 @@ function Footer() {
               >
                 leetcode
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
