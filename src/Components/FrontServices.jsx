@@ -15,7 +15,7 @@ function FrontServices({ services, servicesName }) {
             //   {service.icon} {service.name}
             // </button>
             <FancyButton
-              key={service.name}
+              key={index}
               text={service.name}
               icon={service.icon}
               style="uppercase text-sm sm:text-lg md:text-2xl border py-1.5 md:py-2 px-3 md:px-4 border-[#F5EEE6] rounded-full flex items-center gap-2"
