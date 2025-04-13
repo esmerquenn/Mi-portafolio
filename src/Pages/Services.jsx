@@ -40,7 +40,7 @@ const Services = () => {
     servicesName = "BACK-END DEVELOPMENT";
   } else if (slug === "mentoring") {
     services = mentorship_services;
-    skills = []; 
+    skills = [];
     servicesName = "MENTORSHIP SERVICES";
   } else {
     services = front_services;
@@ -49,11 +49,14 @@ const Services = () => {
   }
 
   return (
-    <div className="bg-custom-services">
-      <div className="min-h-screen p-3 md:p-10 pt-28">
+    <div>
+      <div className="bg-custom-services p-3 md:p-10 ">
         <FrontServices services={services} servicesName={servicesName} />
-        {skills.length > 0 && <FrontSkills skills={skills} skillsName="Skills" />}
-        <FrontSkills skills={soft_skills} skillsName="Soft Skills" />
+      </div>
+      <div className="shadow_me_before"></div>
+      <div className="min-h-screen bg-mybrown shadow_me p-3 md:p-10 pt-28">
+      {skills.length > 0 && <FrontSkills skills={skills} skillsName="Skills" />}
+       <FrontSkills skills={soft_skills} skillsName="Soft Skills" />
       </div>
     </div>
   );

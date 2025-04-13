@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation, useNavigate } from "react-router-dom";
 
 import Nav from "./Nav";
 import { animatePageIn, animatePageOut } from "./animatePageIn";
 import Bars from "./Bars";
+import ScrollToTop from "./ScrollToTop";
 function MainLayout() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ function MainLayout() {
     <div>
       <Bars />
       <Nav handleClick={handleClick} />
+      <ScrollToTop/>
       <Outlet />
     </div>
   );

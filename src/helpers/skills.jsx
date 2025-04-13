@@ -47,17 +47,17 @@ export const back_skills = [
 ];
 
 export const front_services = [
-  { name: "Responsive Web Design", icon: <AiOutlineDesktop className="text-4xl" /> },
-  { name: "Microinteractions", icon: <AiOutlineInteraction className="text-4xl" /> },
-  { name: "High-Performance", icon: <AiOutlineRocket className="text-4xl" /> },
-  { name: "Modern UI/UX Design", icon: <SiMaterialdesign className="text-4xl" /> },
-  { name: "E-Commerce", icon: <SiTrustedshops className="text-4xl" /> },
-  { name: "Web Dashboards", icon: <MdOutlineDashboard className="text-4xl" /> },
-  { name: "Animations & Interactive Elements", icon: <MdOutlineAnimation className="text-4xl" /> },
-  { name: "SEO & Accessibility Optimization", icon: <IoPulseOutline className="text-4xl" /> },
-  { name: "Headless CMS", icon: <SiPayloadcms className="text-4xl" /> },
-  { name: "API & Backend Integration", icon: <FaConnectdevelop className="text-4xl" /> },
-  { name: "Progressive Web Apps", icon: <SiProgress className="text-4xl" /> },
+  { name: "Responsive Web Design", icon: <AiOutlineDesktop className=" text-2xl md:text-4xl" /> },
+  { name: "Microinteractions", icon: <AiOutlineInteraction className="text-2xl md:text-4xl" /> },
+  { name: "High-Performance", icon: <AiOutlineRocket className="text-2xl md:text-4xl" /> },
+  { name: "Modern UI/UX Design", icon: <SiMaterialdesign className="text-2xl md:text-4xl" /> },
+  { name: "E-Commerce", icon: <SiTrustedshops className="text-2xl md:text-4xl" /> },
+  { name: "Web Dashboards", icon: <MdOutlineDashboard className="text-2xl md:text-4xl" /> },
+  { name: "Animations & Interactive Elements", icon: <MdOutlineAnimation className="text-2xl md:text-4xl" /> },
+  { name: "SEO & Accessibility Optimization", icon: <IoPulseOutline className="text-2xl md:text-4xl" /> },
+  { name: "Headless CMS", icon: <SiPayloadcms className="text-2xl md:text-4xl" /> },
+  { name: "API & Backend Integration", icon: <FaConnectdevelop className="text-2xl md:text-4xl" /> },
+  { name: "Progressive Web Apps", icon: <SiProgress className="text-2xl md:text-4xl" /> },
 ];
 
 export const front_skills = [

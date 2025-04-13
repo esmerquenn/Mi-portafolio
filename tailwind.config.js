@@ -11,6 +11,7 @@ export default {
         md: "765px",
         lg: "992px",
         xl: "1140px",
+        xl2: "1240px"
       },
       colors: {
         white: "#F5EEE6",

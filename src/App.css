@@ -23,9 +23,13 @@
   background: url(./assets/bg/herobg-2k2x.webp) center/cover;
 }
 .bg-custom-services {
-  background: linear-gradient(#00000047, #00000047, #00000047), url(./assets/bg/pxfuel.jpg) center/cover;
-  background-repeat: repeat-y;
+  background: linear-gradient(#00000057, #00000057, #00000057), url(./assets/bg/pxfuel.jpg) center/cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  z-index: 10;
+  position: relative;
 }
+
 .bg-custom2 {
   background: linear-gradient(#000, #00000000, #00000000, #00000000), url(./assets/bg/herobg-2k2x.webp) center/cover;
   background-attachment: fixed;
@@ -74,5 +78,10 @@
   }
   .my-grid > a:nth-child(4) {
     grid-column: 1/4;
+  }
+  .bg-custom-services {
+    /* background: linear-gradient(#00000047, #00000047, #00000047), url(./assets/bg/oll.webp) center/cover; */
+    /* background-repeat: repeat-y; */
+   
   }
 }
