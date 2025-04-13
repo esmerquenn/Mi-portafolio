@@ -5,6 +5,7 @@ import bah from "./../assets/bah.png";
 import bar from "./../assets/bar.png";
 import my from "./../assets/my.png";
 import workr from "./../assets/workr.png";
+import WorksMain from "./WorksMain";
 function Main() {
   return (
     <div className="bg-black">
@@ -36,7 +37,7 @@ function Main() {
           <img className="w-full opacity-50 border-4 border-white" src={esmer} alt="esmer" />
         </div>
       </div>
-      <div className=" py-20 ">
+      {/* <div className=" py-20 ">
         <h3 className="px-10 font-fancy uppercase text-3xl md:text-5xl mb-10">Featured work</h3>
         <div className="my-grid px-10 grid grid-cols-3 gap-10">
           <a target="_blank" href="https://baharatci-clone.vercel.app/" className=" flex items-center gap-2">
@@ -68,9 +69,10 @@ function Main() {
             <img className="w-[340px] opacity-50 border-4 border-white " src={workr} alt="workr" />
           </a>
         </div>
-      </div>
+      </div> */}
 
-      <div className="py-20 flex justify-center items-center ">
+      <WorksMain />
+      <div className="pb-20 flex justify-center items-center ">
         <button className=" transition-button bg-white text-black px-4 py-2  rounded-2xl ">
           <Link className=" uppercase font-fancy" to="/work">
             see my works
