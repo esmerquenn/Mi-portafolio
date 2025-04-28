@@ -53,7 +53,6 @@ const Services = () => {
       <div className="bg-custom-services p-3 md:p-10 ">
         <FrontServices services={services} servicesName={servicesName} />
       </div>
-      <div className="shadow_me_before"></div>
       <div className="min-h-screen bg-mybrown shadow_me p-3 md:p-10 pt-28">
       {skills.length > 0 && <FrontSkills skills={skills} skillsName="Skills" />}
        <FrontSkills skills={soft_skills} skillsName="Soft Skills" />

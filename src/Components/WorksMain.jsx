@@ -1,8 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import bah from "./../assets/bah.png";
-import bar from "./../assets/bar.png";
-import my from "./../assets/my.png";
-import workr from "./../assets/workr.png";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
