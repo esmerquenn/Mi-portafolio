@@ -13,4 +13,5 @@ export const socialLinks = [
   { name: "linkedin", href: "https://www.linkedin.com/in/esmereshreti/" },
   { name: "instagram", href: "https://www.instagram.com/esiquerela/" },
   { name: "leetcode", href: "https://leetcode.com/u/esmer_666/" },
+  { name: "leetcode", href: "https://leetcode.com/u/esmer_666/" },
 ];
