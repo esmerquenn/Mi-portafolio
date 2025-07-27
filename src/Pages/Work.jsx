@@ -28,7 +28,7 @@ function Work() {
                   project.name
                 )}
               </h2>
-              <span className="text-white uppercase font-medium font-poppins text-lg italic">- Front-end Developer</span>
+              <span className="text-white uppercase font-medium font-poppins text-lg italic">- Full-Stack Developer</span>
             </div>
           ))}
         </div>

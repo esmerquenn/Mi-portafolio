@@ -1,6 +1,6 @@
 export const  projects = [
     { name: "Barshop", url: "https://barshop-clone.vercel.app/" },
-    { name: "Parfume de`Paris", url: "https://parfumedeparis.az/az" },
+    { name: "Parfume", url: "https://parfumedeparis.az/az" },
     { name: "Galeon", url: "https://galeon.az/az" },
     { name: "Baharatci", url: "https://baharatci-clone.vercel.app/" },
     { name: "Cosmopark", url: "https://cosmo-parkme.vercel.app/" },
