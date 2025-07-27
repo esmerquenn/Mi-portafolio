@@ -11,6 +11,9 @@ function Work() {
             up quickly and create all of my own work on my own. My objective is to advance to the position of senior developer
             with a focus on creating intuitive user interfaces. I work to develop and hone my abilities with each project in order
             to realize that goal.
+            <div className="pt-3 text-[.8rem]">
+  I only showcase my freelance work. My other projects involve internal tracking and cargo systems, which I’m not allowed to share due to confidentiality.
+              </div>
           </p>
         </div>
         <div className="flex flex-col items-start xl:items-end gap-10 2xl:px-[10%]">
