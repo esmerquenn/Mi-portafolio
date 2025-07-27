@@ -23,7 +23,7 @@ function Home() {
         <div className="flex flex-col lg:flex-row  items-end   justify-between">
           <div className=" mt-40 sm:mt-28 xl:w-2/5 flex items-end">
             <h1 className=" font-fancy uppercase text-[2rem] sm:text-[7vw] md:text-[5.7vw] font-bold ">
-              <span className="flex items-end ">Web developer</span>
+              <span className="flex items-end ">FullStack developer</span>
               <span>mentor</span>
             </h1>
           </div>
@@ -36,8 +36,8 @@ function Home() {
               </div>
             </div>
             <p className=" font-poppins text-lg md:text-2xl  text-right pb-2">
-              Hi there, I'm Esmer, and I'm a front-end developer. My areas of expertise are animation and deepcoding dashboards,
-              systems, and websites. I've worked in this field for more than 1.5 years. Coding what you want to see on your
+              Hi there, I'm Esmer, and I'm a full-stack developer. My areas of expertise are PHP, Laravel, YII2, JavaScript, React and deepcoding dashboards,
+              systems, and websites. I've worked in this field for more than 2.5 years. Coding what you want to see on your
               websites is what I do.
               <span className=" hidden md:block">
                 I also mentor others to learn about this field and pursue careers similar to mine.
