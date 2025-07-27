@@ -14,8 +14,8 @@ function Main() {
           <h3 className="font-fancy uppercase text-3xl md:text-5xl mb-10">Hello I'M Esmer</h3>
           <div className=" font-poppins text-lg md:text-2xl  flex flex-col gap-5 pb-2">
             <p>
-              I have worked as a front-end developer for two startups, completing 13 websites and three dashboards. From one-page
-              sites to full e-commerce platforms, I tailor functionality and design to meet client needs.
+              I work as a fullstack developer. I have worked as a front-end developer for two startups, completing more than 15 websites and 5 dashboards. From one-page
+              sites to full e-commerce platforms and cargo tracking systems, I tailor functionality and design to meet client needs.
             </p>
             <p>
               I take a patient, problem-solving approach to development, transforming designs into clean, responsive, and
