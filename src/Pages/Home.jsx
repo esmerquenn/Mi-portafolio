@@ -23,7 +23,7 @@ function Home() {
         <div className="flex flex-col lg:flex-row  items-end   justify-between">
           <div className=" mt-40 sm:mt-28 xl:w-2/5 flex items-end">
             <h1 className=" font-fancy uppercase text-[2rem] sm:text-[7vw] md:text-[5.7vw] font-bold ">
-              <span className="flex items-end ">FullStack developer</span>
+              <span className="flex items-end ">Full-Stack developer</span>
               <span>mentor</span>
             </h1>
           </div>
