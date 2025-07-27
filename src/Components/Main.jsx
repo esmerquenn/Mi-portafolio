@@ -23,7 +23,7 @@ function Main() {
             </p>
             <p>
               With a background in photography, I have a keen eye for aesthetics, ensuring visually appealing and user-friendly
-              interfaces.
+              interfaces. 
             </p>
             <p>I adapt quickly, learn fast, and always bring fresh ideas to projects.</p>
             <button className=" bg-custom-btn capitalize text-lg font-medium w-[200px] border py-1.5 px-4 border-white rounded-full flex items-center justify-center gap-2">
