@@ -15,7 +15,14 @@ import {
   SiMongodb,
   SiRedis,
   SiGraphql,
+  SiTypeorm 
 } from "react-icons/si";
+import { BsFiletypeSql } from "react-icons/bs";
+
+import { FaLaravel, FaPhp  } from "react-icons/fa";
+import { DiYii } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
+
 import { MdOutlineAnimation, MdOutlineDashboard, MdOutlineTipsAndUpdates } from "react-icons/md";
 import { RiJavascriptLine, RiNextjsLine, RiSecurePaymentLine, RiServerFill, RiTeamLine } from "react-icons/ri";
 import { GrCss3 } from "react-icons/gr";
@@ -36,10 +43,12 @@ export const back_services = [
 export const back_skills = [
   { name: "Node.js", icon: <FaNodeJs className="text-2xl" /> },
   { name: "Express.js", icon: <SiExpress className="text-2xl" /> },
-  { name: "PHP", icon: <SiExpress className="text-2xl" /> },
-  { name: "SQL", icon: <SiExpress className="text-2xl" /> },
-  { name: "MySQL", icon: <SiExpress className="text-2xl" /> },
-  { name: "ORM", icon: <SiExpress className="text-2xl" /> },
+  { name: "PHP", icon: <FaPhp  className="text-2xl" /> },
+  { name: "Laravel", icon: <FaLaravel className="text-2xl" /> },
+  { name: "Yİİ2", icon: <DiYii className="text-2xl" /> },
+  { name: "SQL", icon: <BsFiletypeSql className="text-2xl" /> },
+  { name: "MySQL", icon: <GrMysql className="text-2xl" /> },
+  { name: "ORM", icon: <SiTypeorm  className="text-2xl" /> },
   { name: "Entity Framework", icon: <SiExpress className="text-2xl" /> },
   { name: "Dapper", icon: <SiExpress className="text-2xl" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-2xl" /> },
