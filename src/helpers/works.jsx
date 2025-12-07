@@ -1,4 +1,5 @@
 export const projects = [
+  { name: "Caucasync", url: "https://caucasync.com/en" },
   { name: "Parfume", url: "https://parfumedeparis.az/az" },
   { name: "Galeon", url: "https://galeon.az/az" },
   { name: "Barshop", url: "https://barshop-clone.vercel.app/" },
