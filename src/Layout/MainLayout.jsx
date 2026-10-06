@@ -1,30 +1,35 @@
 import React, { useEffect } from "react";
-import { Outlet, ScrollRestoration, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 import Nav from "./Nav";
-import { animatePageIn, animatePageOut } from "./animatePageIn";
+import { animatePageOut } from "./animatePageIn";
 import Bars from "./Bars";
 import ScrollToTop from "./ScrollToTop";
+import Preloader from "./Preloader";
+import Footer from "../Components/Footer";
+import { initSmoothScroll } from "./smoothScroll";
+
 function MainLayout() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   animatePageIn();
-  // }, [location]);
+  useEffect(() => initSmoothScroll(), []);
 
   const handleClick = (href) => {
-    console.log(href, "aa");
     if (location.pathname !== href) {
       animatePageOut(href, navigate);
     }
   };
   return (
-    <div>
+    <div className="font-sans bg-white text-ink">
+      <Preloader />
       <Bars />
       <Nav handleClick={handleClick} />
-      <ScrollToTop/>
-      <Outlet />
+      <ScrollToTop />
+      <main className="relative z-10 bg-white">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }

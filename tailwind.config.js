@@ -4,30 +4,26 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: "Poppins,serif",
+        sans: ['"Inter Tight"', "Inter", "system-ui", "sans-serif"],
       },
       screens: {
         sm: "540px",
         md: "765px",
         lg: "992px",
         xl: "1140px",
-        xl2: "1240px"
+        xl2: "1240px",
       },
       colors: {
-        white: "#F5EEE6",
-        black:"#131313",
-        krem: "#EEE5C8",
-        darkKrem: "#f7f7f7",
-        lightGreen: "#8FBC8B",
-        middleGreen: "#234829",
-        olivegreen: "#7C7752",
-        brown: "#3F332B",
-        mybrown: "#2E2827",
-        darkBrown: "#2f0d03",
-        darkGreen: "#001514",
-        darkRed: "#fefefe",
-        redy: "#98323B",
-        red: "#DB2B30",
+        ink: "#0F1B2D",
+        night: "#0A1322",
+        muted: "#8A94A6",
+        soft: "#F4F6F9",
+        line: "rgba(15, 27, 45, 0.12)",
+        accent: "#059669",
+        accentDark: "#047857",
+      },
+      transitionTimingFunction: {
+        expo: "cubic-bezier(0.76, 0, 0.24, 1)",
       },
     },
   },

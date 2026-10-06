@@ -1,39 +1,26 @@
 import { projects } from "../helpers/works";
+import PageHeader from "../Components/PageHeader";
+import WorkList from "../Components/WorkList";
 
 function Work() {
   return (
-    <div>
-      <div className=" bg-custom-work min-h-screen    pt-28 px-3 lg:px-10 flex flex-col xl:flex-row items-start justify-between">
-        <div className=" font-poppins text-white xl:sticky min-h-[50vh] flex justify-end flex-col  md:p-10 top-40 z-10">
-          <h5 className=" uppercase text-3xl">WORK</h5>
-          <p className=" my-3 text-xl">
-            I use a variety of technologies when I make websites. Even though my early work might seem amateurish, I pick things
-            up quickly and create all of my own work on my own. My objective is to advance to the position of senior developer
-            with a focus on creating intuitive user interfaces. I work to develop and hone my abilities with each project in order
-            to realize that goal.
-            <div className="pt-3 text-[.8rem]">
-  I only showcase my freelance work. My other projects involve internal tracking and cargo systems, which I’m not allowed to share due to confidentiality.
-              </div>
+    <>
+      <PageHeader title="Creating next level digital products">
+        <p className="text-muted">
+          Websites, e-commerce platforms and dashboards I&apos;ve built end to end as a full-stack developer.
+        </p>
+      </PageHeader>
+
+      <section className="px-5 md:px-[8vw] pb-28 md:pb-40">
+        <div className="max-w-[1400px] mx-auto">
+          <WorkList projects={projects} showColumns />
+          <p className="text-sm text-muted mt-12 md:mt-16 md:px-[4vw] max-w-2xl">
+            Only freelance work is shown here. My other projects — internal tracking and cargo systems — are under
+            confidentiality agreements.
           </p>
         </div>
-        <div className="flex flex-col items-start xl:items-end gap-10 2xl:px-[10%]">
-          {projects.map((project, index) => (
-            <div key={index}>
-              <h2 className="uppercase text-white text-4xl md:text-7xl 2xl:text-[100px] tracking-wide font-bold font-fancy leading-[60px] md:mb-7 hover:italic hover:translate-x-1 transition-transform duration-500">
-                {project.url ? (
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                    {project.name}
-                  </a>
-                ) : (
-                  project.name
-                )}
-              </h2>
-              <span className="text-white uppercase font-medium font-poppins text-lg italic">- Full-Stack Developer</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

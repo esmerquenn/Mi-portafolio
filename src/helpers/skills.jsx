@@ -111,7 +111,6 @@ export const mentorship_services = [
     { name: "Quick Learning", icon: <AiOutlineRocket className="text-2xl" /> },
     { name: "Critical Thinking", icon: <AiOutlineRocket className="text-2xl" /> },
     { name: "Work Ethic", icon: <AiOutlineRocket className="text-2xl" /> },
-    { name: "Time Management", icon: <AiOutlineRocket className="text-2xl" /> },
   ];
 
  
