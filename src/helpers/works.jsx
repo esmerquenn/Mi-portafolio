@@ -1,4 +1,5 @@
 import mainer from "../assets/previews/mainer.webp";
+import law from "../assets/previews/law.png";
 import caucasync from "../assets/previews/caucasync.webp";
 import parfume from "../assets/previews/parfume.webp";
 import galeon from "../assets/previews/galeon.webp";
@@ -17,6 +18,7 @@ import berbershop from "../assets/previews/berbershop.webp";
 
 // `color` is the backdrop of the hover preview; `image` is a top-fold screenshot (optional)
 export const projects = [
+  { name: "Hüquq bürosu", url: "https://eliyev-huquq.vercel.app", image: law, color: "#3A3328" },
   { name: "Mainer", url: "https://mainer.az/az", image: mainer, color: "#E8EEF8" },
   { name: "Caucasync", url: "https://caucasync.com/en", image: caucasync, color: "#E3EBDD" },
   { name: "Parfume", url: "https://parfumedeparis.az/az", image: parfume, color: "#3B2A4A" },
