@@ -19,11 +19,11 @@ import berbershop from "../assets/previews/berbershop.webp";
 // `color` is the backdrop of the hover preview; `image` is a top-fold screenshot (optional)
 export const projects = [
   { name: "Hüquq bürosu", url: "https://eliyev-huquq.vercel.app", image: law, color: "#3A3328" },
-  { name: "Mainer", url: "https://mainer.az/az", image: mainer, color: "#E8EEF8" },
-  { name: "Caucasync", url: "https://caucasync.com/en", image: caucasync, color: "#E3EBDD" },
+  { name: "Qulp", url: "https://qulp.vercel.app/", image: qulp, color: "#0A1A33" },
   { name: "Parfume", url: "https://parfumedeparis.az/az", image: parfume, color: "#3B2A4A" },
   { name: "Hjem", url: "https://hjem-store.vercel.app/", image: hjem, color: "#EFE9E1" },
-  { name: "Qulp", url: "https://qulp.vercel.app/", image: qulp, color: "#0A1A33" },
+  { name: "Mainer", url: "https://mainer.az/az", image: mainer, color: "#E8EEF8" },
+  { name: "Caucasync", url: "https://caucasync.com/en", image: caucasync, color: "#E3EBDD" },
   { name: "Damai", url: "https://hotel-damai.vercel.app/", image: damai, color: "#3A3328" },
   { name: "Galeon", url: "https://galeon.az/az", image: galeon, color: "#E6E3F4" },
   { name: "Barshop", url: "https://barshop-clone.vercel.app/", image: barshop, color: "#2B2522" },
